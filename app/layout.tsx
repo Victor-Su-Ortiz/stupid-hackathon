@@ -15,7 +15,7 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "The Stupid Hackathon | Build Something Gloriously Useless",
   description: "Join the most absurd hackathon ever. Build dumb things, win a Labubu, and celebrate the joy of pointless programming. In collaboration with AI Valley.",
-  keywords: ["hackathon", "stupid hackathon", "AI Valley", "EF", "programming", "comedy", "tech event"],
+  keywords: ["hackathon", "stupid hackathon", "AI Valley", "programming", "comedy", "tech event", "San Francisco"],
   authors: [{ name: "AI Valley", url: "https://aivalley.io" }],
   metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://stupidhackathon.vercel.app'),
   openGraph: {

@@ -157,7 +157,7 @@ export default function HeroSection() {
           transition={{ delay: 1.5 }}
         >
           <p className="text-xl mb-2">September 20th, 2025</p>
-          <p className="text-lg opacity-80">@ EF (Prepare for chaos)</p>
+          <p className="text-lg opacity-80">@ TBD (Location to be announced)</p>
         </motion.div>
       </div>
 

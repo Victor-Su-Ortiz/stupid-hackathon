@@ -142,7 +142,7 @@ For all inquiries, sponsorships, and collaboration:
 ## 🎯 Event Details
 
 - **Date**: September 20th, 2025
-- **Location**: EF Building
+- **Location**: TBD (To be announced)
 - **Time**: 10:00 AM - 9:00 PM (PST/EST/GMT/JST/MARS - we're not sure)
 - **Capacity**: Limited to 100 chaos agents
 

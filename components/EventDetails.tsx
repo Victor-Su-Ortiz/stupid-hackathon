@@ -128,8 +128,8 @@ export default function EventDetails() {
               <MapPin className="w-8 h-8 text-primary mr-3" />
               <h3 className="text-2xl font-bold text-dark">Location</h3>
             </div>
-            <p className="text-xl text-dark mb-2">EF Building</p>
-            <p className="text-dark/70 mb-4">Where dreams come to die hilariously</p>
+            <p className="text-xl text-dark mb-2">Location: TBD</p>
+            <p className="text-dark/70 mb-4">To be announced soon - stay tuned for the chaos location!</p>
             
             {/* Fake Treasure Map */}
             <div className="bg-accent/20 rounded-lg p-4 relative overflow-hidden">
