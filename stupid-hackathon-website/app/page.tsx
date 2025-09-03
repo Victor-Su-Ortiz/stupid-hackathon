@@ -1,0 +1,49 @@
+"use client";
+
+import { useEffect } from "react";
+import dynamic from "next/dynamic";
+import Navigation from "@/components/Navigation";
+import HeroSection from "@/components/HeroSection";
+import AboutSection from "@/components/AboutSection";
+import EventDetails from "@/components/EventDetails";
+import Schedule from "@/components/Schedule";
+import ProjectsGallery from "@/components/ProjectsGallery";
+import Sponsors from "@/components/Sponsors";
+import PrizeSection from "@/components/PrizeSection";
+import Footer from "@/components/Footer";
+import KonamiCode from "@/components/KonamiCode";
+
+export default function Home() {
+  useEffect(() => {
+    // Add random page behaviors
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      if (scrollY > 100 && Math.random() > 0.99) {
+        document.body.style.transform = `rotate(${Math.random() * 2 - 1}deg)`;
+        setTimeout(() => {
+          document.body.style.transform = "rotate(0deg)";
+        }, 500);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  return (
+    <>
+      <KonamiCode />
+      <Navigation />
+      <main className="overflow-x-hidden">
+        <HeroSection />
+        <AboutSection />
+        <EventDetails />
+        <Schedule />
+        <ProjectsGallery />
+        <Sponsors />
+        <PrizeSection />
+      </main>
+      <Footer />
+    </>
+  );
+}

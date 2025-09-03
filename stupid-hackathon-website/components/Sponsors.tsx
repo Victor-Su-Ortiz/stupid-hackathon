@@ -1,0 +1,182 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Link from "next/link";
+import { ExternalLink, Sparkles } from "lucide-react";
+import { AIVALLEY_URL, CONTACT_EMAIL, SPONSOR_BENEFITS } from "@/lib/constants";
+
+const dummySponsors = [
+  { name: "TechCorp", logo: "🏢", level: "gold" },
+  { name: "StartupXYZ", logo: "🚀", level: "silver" },
+  { name: "CodeFactory", logo: "⚙️", level: "silver" },
+  { name: "InnovateCo", logo: "💡", level: "bronze" },
+  { name: "DigitalWave", logo: "🌊", level: "bronze" },
+  { name: "FutureTech", logo: "🔮", level: "bronze" },
+];
+
+export default function Sponsors() {
+  return (
+    <section id="sponsors" className="py-20 bg-dark text-white relative overflow-hidden">
+      {/* Animated Background */}
+      <div className="absolute inset-0">
+        {Array.from({ length: 30 }, (_, i) => (
+          <motion.div
+            key={i}
+            className="absolute text-4xl opacity-10"
+            initial={{
+              x: Math.random() * 100 + "%",
+              y: Math.random() * 100 + "%",
+              scale: 0,
+            }}
+            animate={{
+              scale: [0, 1, 0],
+              rotate: 360,
+            }}
+            transition={{
+              duration: 10,
+              delay: i * 0.2,
+              repeat: Infinity,
+            }}
+          >
+            💰
+          </motion.div>
+        ))}
+      </div>
+
+      <div className="container mx-auto px-4 relative z-10">
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          className="text-center mb-12"
+        >
+          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+            <span className="text-accent comic-sans">Companies Brave Enough</span>
+            <br />
+            <span className="text-white">to Support Stupidity</span>
+          </h2>
+          <p className="text-xl text-white/80">
+            These legends embrace chaos and questionable decision-making
+          </p>
+        </motion.div>
+
+        {/* AI Valley Featured Section */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <div className="bg-gradient-to-r from-primary via-secondary to-accent p-1 rounded-3xl">
+            <div className="bg-dark rounded-3xl p-12">
+              <div className="text-center">
+                <div className="inline-flex items-center gap-2 mb-4">
+                  <Sparkles className="w-8 h-8 text-accent" />
+                  <h3 className="text-3xl font-bold text-white">Presenting Partner</h3>
+                  <Sparkles className="w-8 h-8 text-accent" />
+                </div>
+                <Link
+                  href={AIVALLEY_URL}
+                  target="_blank"
+                  className="group inline-block"
+                >
+                  <motion.div
+                    className="bg-white text-dark px-12 py-6 rounded-2xl shadow-2xl"
+                    whileHover={{ scale: 1.05 }}
+                    transition={{ type: "spring" }}
+                  >
+                    <h4 className="text-4xl font-bold mb-2 group-hover:text-primary transition-colors">
+                      AI Valley
+                    </h4>
+                    <p className="text-dark/70 flex items-center justify-center gap-2">
+                      Where AI meets Absurdity
+                      <ExternalLink className="w-4 h-4" />
+                    </p>
+                  </motion.div>
+                </Link>
+                <p className="text-white/70 mt-4 max-w-2xl mx-auto">
+                  AI Valley is proud to support this celebration of creative chaos. 
+                  Because sometimes the best innovations come from the worst ideas.
+                </p>
+              </div>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* Other Sponsors Grid */}
+        <div className="grid md:grid-cols-3 gap-6 mb-16">
+          {dummySponsors.map((sponsor, index) => (
+            <motion.div
+              key={index}
+              initial={{ opacity: 0, y: 50 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ delay: index * 0.1 }}
+              className={`bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center ${
+                sponsor.level === "gold" ? "md:col-span-2" : ""
+              }`}
+            >
+              <motion.div
+                className="text-6xl mb-4"
+                whileHover={{ 
+                  rotate: [0, -10, 10, -10, 10, 0],
+                  scale: 1.2,
+                }}
+                transition={{ duration: 0.5 }}
+              >
+                {sponsor.logo}
+              </motion.div>
+              <h4 className="text-xl font-bold text-white mb-2">{sponsor.name}</h4>
+              <p className="text-white/60 capitalize">{sponsor.level} Sponsor</p>
+            </motion.div>
+          ))}
+        </div>
+
+        {/* Become a Sponsor CTA */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          whileInView={{ opacity: 1 }}
+          viewport={{ once: true }}
+          className="bg-gradient-to-r from-secondary to-chaos rounded-3xl p-12 text-center"
+        >
+          <h3 className="text-3xl font-bold mb-4 text-dark comic-sans">
+            Join the Madness as a Sponsor!
+          </h3>
+          <p className="text-dark/80 text-xl mb-6">
+            $2,000 flat rate to be associated with glorious failure
+          </p>
+
+          {/* Benefits */}
+          <div className="grid md:grid-cols-2 gap-4 mb-8 max-w-3xl mx-auto">
+            {SPONSOR_BENEFITS.map((benefit, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: index * 0.1 }}
+                className="flex items-center gap-3 text-left"
+              >
+                <span className="text-2xl">✅</span>
+                <span className="text-dark/90">{benefit}</span>
+              </motion.div>
+            ))}
+          </div>
+
+          <motion.a
+            href={`mailto:${CONTACT_EMAIL}?subject=Sponsorship Inquiry - Stupid Hackathon`}
+            className="inline-flex items-center gap-2 bg-dark text-white px-8 py-4 rounded-full font-bold text-lg shadow-2xl"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Become a Sponsor
+            <ExternalLink className="w-5 h-5" />
+          </motion.a>
+          <p className="text-dark/60 mt-4">
+            Contact: {CONTACT_EMAIL}
+          </p>
+        </motion.div>
+      </div>
+    </section>
+  );
+}

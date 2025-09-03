@@ -1,0 +1,139 @@
+@import "tailwindcss";
+
+:root {
+  --primary: #FF6B6B;
+  --secondary: #4ECDC4;
+  --accent: #FFD93D;
+  --chaos: #A8E6CF;
+  --dark: #2C3E50;
+  --light: #F7F7F7;
+  --background: #ffffff;
+  --foreground: #2C3E50;
+}
+
+@theme inline {
+  --color-primary: var(--primary);
+  --color-secondary: var(--secondary);
+  --color-accent: var(--accent);
+  --color-chaos: var(--chaos);
+  --color-dark: var(--dark);
+  --color-light: var(--light);
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-inter);
+  --font-mono: var(--font-geist-mono);
+  --font-comic: "Comic Sans MS", cursive, sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans);
+  overflow-x: hidden;
+}
+
+/* Custom animations */
+@keyframes wiggle {
+  0%, 100% { transform: rotate(-3deg); }
+  50% { transform: rotate(3deg); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes glitch {
+  0% {
+    text-shadow: 0.05em 0 0 var(--primary), -0.05em -0.025em 0 var(--secondary),
+      0.025em 0.05em 0 var(--accent);
+  }
+  14% {
+    text-shadow: 0.05em 0 0 var(--primary), -0.05em -0.025em 0 var(--secondary),
+      0.025em 0.05em 0 var(--accent);
+  }
+  15% {
+    text-shadow: -0.05em -0.025em 0 var(--primary), 0.025em 0.025em 0 var(--secondary),
+      -0.05em -0.05em 0 var(--accent);
+  }
+  49% {
+    text-shadow: -0.05em -0.025em 0 var(--primary), 0.025em 0.025em 0 var(--secondary),
+      -0.05em -0.05em 0 var(--accent);
+  }
+  50% {
+    text-shadow: 0.025em 0.05em 0 var(--primary), 0.05em 0 0 var(--secondary),
+      0 -0.05em 0 var(--accent);
+  }
+  99% {
+    text-shadow: 0.025em 0.05em 0 var(--primary), 0.05em 0 0 var(--secondary),
+      0 -0.05em 0 var(--accent);
+  }
+  100% {
+    text-shadow: -0.025em 0 0 var(--primary), -0.025em -0.025em 0 var(--secondary),
+      -0.025em -0.05em 0 var(--accent);
+  }
+}
+
+@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+.wiggle {
+  animation: wiggle 0.5s ease-in-out infinite;
+}
+
+.float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.spin-slow {
+  animation: spin 20s linear infinite;
+}
+
+.glitch {
+  animation: glitch 1s linear infinite;
+}
+
+.bounce {
+  animation: bounce 1s ease-in-out infinite;
+}
+
+/* Stupid cursor trail */
+.duck-trail {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  font-size: 20px;
+  animation: float 2s ease-in-out infinite;
+}
+
+/* Comic Sans for maximum stupidity */
+.comic-sans {
+  font-family: "Comic Sans MS", cursive, sans-serif !important;
+}
+
+/* Chaos mode styles */
+body.chaos-mode {
+  animation: glitch 0.3s linear infinite;
+}
+
+body.chaos-mode * {
+  animation-duration: 0.5s !important;
+}
