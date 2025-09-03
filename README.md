@@ -100,13 +100,18 @@ stupid-hackathon-website/
 
 1. Push your code to GitHub
 2. Import your repository on [Vercel](https://vercel.com)
-3. Configure environment variables
+3. **IMPORTANT**: Add these environment variables in Vercel dashboard:
+   - `NEXT_PUBLIC_EMAIL=community@aivalley.io`
+   - `NEXT_PUBLIC_AIVALLEY_URL=https://aivalley.io`
+   - `NEXT_PUBLIC_EVENT_DATE=2025-09-20`
 4. Deploy!
 
 ```bash
 npm run build  # Build for production
 npm start      # Run production build locally
 ```
+
+**Note**: See `DEPLOYMENT_GUIDE.md` for detailed troubleshooting if you encounter any issues.
 
 ## 🤝 Sponsors
 

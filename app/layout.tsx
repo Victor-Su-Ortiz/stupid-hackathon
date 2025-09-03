@@ -17,27 +17,21 @@ export const metadata: Metadata = {
   description: "Join the most absurd hackathon ever. Build dumb things, win a Labubu, and celebrate the joy of pointless programming. In collaboration with AI Valley.",
   keywords: ["hackathon", "stupid hackathon", "AI Valley", "EF", "programming", "comedy", "tech event"],
   authors: [{ name: "AI Valley", url: "https://aivalley.io" }],
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://stupidhackathon.vercel.app'),
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://stupidhackathon.com",
     title: "The Stupid Hackathon | Build Something Gloriously Useless",
     description: "Join the most absurd hackathon ever. Build dumb things, win a Labubu, and celebrate the joy of pointless programming. In collaboration with AI Valley.",
     siteName: "The Stupid Hackathon",
-    images: [
-      {
-        url: "/og-image.png",
-        width: 1200,
-        height: 630,
-        alt: "The Stupid Hackathon - In collaboration with AI Valley",
-      },
-    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "The Stupid Hackathon | Build Something Gloriously Useless",
     description: "Join the most absurd hackathon ever. In collaboration with AI Valley.",
-    images: ["/og-image.png"],
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
 };
 
