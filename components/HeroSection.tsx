@@ -9,7 +9,7 @@ import { randomFromArray } from "@/lib/utils";
 
 export default function HeroSection() {
   const [typedText, setTypedText] = useState("");
-  const [floatingEmojis, setFloatingEmojis] = useState<Array<{ emoji: string; id: number }>>([]);
+  const [floatingEmojis, setFloatingEmojis] = useState<Array<{ emoji: string; id: number; x: number; y: number }>>([]);
   const fullText = "Build the dumbest thing you can imagine. Seriously.";
 
   useEffect(() => {
@@ -27,9 +27,14 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
+    const width = typeof window !== 'undefined' ? window.innerWidth : 1200;
+    const height = typeof window !== 'undefined' ? window.innerHeight : 800;
+    
     const emojis = Array.from({ length: 15 }, (_, i) => ({
       emoji: randomFromArray(STUPID_EMOJIS),
       id: i,
+      x: Math.random() * width,
+      y: Math.random() * height,
     }));
     setFloatingEmojis(emojis);
   }, []);
@@ -43,13 +48,13 @@ export default function HeroSection() {
             key={item.id}
             className="absolute text-6xl opacity-30"
             initial={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: item.x,
+              y: item.y,
               rotate: 0,
             }}
             animate={{
-              x: Math.random() * window.innerWidth,
-              y: Math.random() * window.innerHeight,
+              x: item.x + (Math.random() - 0.5) * 200,
+              y: item.y + (Math.random() - 0.5) * 200,
               rotate: 360,
             }}
             transition={{
