@@ -12,10 +12,6 @@ const nextConfig: NextConfig = {
       },
     ],
   },
-  // Ensure trailing slashes for better compatibility
-  trailingSlash: false,
-  // Output standalone for Vercel
-  output: process.env.VERCEL ? 'standalone' : undefined,
 };
 
 export default nextConfig;

@@ -29,12 +29,18 @@ NEXT_PUBLIC_AIVALLEY_URL=https://aivalley.io
 NEXT_PUBLIC_EVENT_DATE=2025-09-20
 ```
 
-4. Run the development server:
+4. Add the AI Valley logo (optional but recommended):
+```bash
+# Place your ai-valley.png file in the public folder
+cp /path/to/ai-valley.png ./public/
+```
+
+5. Run the development server:
 ```bash
 npm run dev
 ```
 
-5. Open [http://localhost:3000](http://localhost:3000) in your browser
+6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
 ## 🎪 Features
 
