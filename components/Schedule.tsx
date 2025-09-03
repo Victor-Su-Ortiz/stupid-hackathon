@@ -198,7 +198,7 @@ export default function Schedule() {
           <div className="inline-block bg-accent/20 rounded-2xl p-6">
             <p className="text-dark font-semibold">
               💡 Pro Tip: The schedule is more of a suggestion. 
-              Chaos doesn't follow timelines.
+              Chaos doesn&apos;t follow timelines.
             </p>
           </div>
         </motion.div>

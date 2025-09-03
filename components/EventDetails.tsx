@@ -2,7 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Calendar, Clock, Users } from "lucide-react";
+import { MapPin, Clock, Users } from "lucide-react";
 import { EVENT_DATE } from "@/lib/constants";
 
 export default function EventDetails() {
@@ -66,6 +66,7 @@ export default function EventDetails() {
       setCurrentTimezone(timezones[Math.floor(Math.random() * timezones.length)]);
     }, 5000);
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const [buttonPosition, setButtonPosition] = useState({ x: 0, y: 0 });
@@ -137,7 +138,7 @@ export default function EventDetails() {
                 <li>1. Exit reality</li>
                 <li>2. Turn left at common sense</li>
                 <li>3. Walk past logic</li>
-                <li>4. You've arrived! 🎉</li>
+                <li>4. You&apos;ve arrived! 🎉</li>
               </ol>
               <div className="absolute top-2 right-2 text-4xl opacity-20 rotate-12">
                 🏴‍☠️

@@ -168,7 +168,7 @@ export default function PrizeSection() {
                   <div>
                     <p className="font-semibold text-lg mb-1">Utterly Useless</p>
                     <p className="text-white/80">
-                      Perfect for your collection of things you'll never use
+                      Perfect for your collection of things you&apos;ll never use
                     </p>
                   </div>
                 </motion.div>
@@ -181,7 +181,7 @@ export default function PrizeSection() {
                   <div>
                     <p className="font-semibold text-lg mb-1">Conversation Starter</p>
                     <p className="text-white/80">
-                      "Why do you have that?" - Everyone who sees it
+                      &quot;Why do you have that?&quot; - Everyone who sees it
                     </p>
                   </div>
                 </motion.div>
@@ -237,7 +237,7 @@ export default function PrizeSection() {
               Win This Masterpiece of Stupidity 🎯
             </motion.button>
             <p className="text-white/70 mt-4 italic">
-              * Prize subject to availability and our definition of "stupid"
+              * Prize subject to availability and our definition of &quot;stupid&quot;
             </p>
           </motion.div>
         </div>

@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
-import { ChevronLeft, ChevronRight, ThumbsUp, Trophy } from "lucide-react";
+import { ChevronLeft, ChevronRight, Trophy } from "lucide-react";
 import { PROJECT_IDEAS } from "@/lib/constants";
 import confetti from "canvas-confetti";
 

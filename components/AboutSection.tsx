@@ -60,7 +60,7 @@ export default function AboutSection() {
             <span className="text-dark">Madness?</span>
           </h2>
           <p className="text-xl text-dark/70 max-w-2xl mx-auto">
-            A hackathon where the worse your idea, the better. We're here to prove that 
+            A hackathon where the worse your idea, the better. We&apos;re here to prove that 
             not all code needs to change the world. Some of it just needs to exist.
           </p>
         </motion.div>
