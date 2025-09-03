@@ -1,0 +1,12 @@
+Place the ai-valley.png logo file in this directory (/public/)
+
+The logo will be used in:
+- Navigation bar
+- Hero section
+- Footer
+- Sponsors section
+
+Recommended image specifications:
+- Format: PNG with transparent background
+- Dimensions: At least 400x100px for high quality
+- File name: ai-valley.png

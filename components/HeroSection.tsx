@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
 import { STUPID_EMOJIS, AIVALLEY_URL } from "@/lib/constants";
@@ -81,10 +82,23 @@ export default function HeroSection() {
           <Link
             href={AIVALLEY_URL}
             target="_blank"
-            className="inline-flex items-center space-x-2 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-white transition-colors shadow-lg"
+            className="inline-flex items-center space-x-3 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-white transition-colors shadow-lg group"
           >
             <span className="text-lg">🤝</span>
-            <span className="text-dark font-semibold">In collaboration with AI Valley</span>
+            <span className="text-dark font-semibold">In collaboration with</span>
+            <div className="flex items-center gap-2">
+              <Image 
+                src="/ai-valley.png" 
+                alt="AI Valley" 
+                width={100} 
+                height={30}
+                className="h-8 w-auto group-hover:scale-105 transition-transform"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+              <span className="text-dark font-bold">AI Valley</span>
+            </div>
           </Link>
         </motion.div>
 

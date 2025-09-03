@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { Mail, ExternalLink, Heart } from "lucide-react";
 import { AIVALLEY_URL, CONTACT_EMAIL, STUPID_EMOJIS } from "@/lib/constants";
@@ -59,9 +60,20 @@ export default function Footer() {
             <Link
               href={AIVALLEY_URL}
               target="_blank"
-              className="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors"
+              className="inline-flex items-center gap-2 text-secondary hover:text-accent transition-colors group"
             >
-              <span>Powered by AI Valley</span>
+              <span>Powered by</span>
+              <Image 
+                src="/ai-valley.png" 
+                alt="AI Valley" 
+                width={80} 
+                height={24}
+                className="h-6 w-auto brightness-0 invert group-hover:scale-105 transition-transform"
+                onError={(e) => {
+                  e.currentTarget.style.display = 'none';
+                }}
+              />
+              <span className="font-semibold">AI Valley</span>
               <ExternalLink size={16} />
             </Link>
           </div>

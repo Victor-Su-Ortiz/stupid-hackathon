@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { ExternalLink, Sparkles } from "lucide-react";
 import { AIVALLEY_URL, CONTACT_EMAIL, SPONSOR_BENEFITS } from "@/lib/constants";
 
@@ -81,17 +82,32 @@ export default function Sponsors() {
                   className="group inline-block"
                 >
                   <motion.div
-                    className="bg-white text-dark px-12 py-6 rounded-2xl shadow-2xl"
+                    className="bg-white text-dark px-12 py-8 rounded-2xl shadow-2xl"
                     whileHover={{ scale: 1.05 }}
                     transition={{ type: "spring" }}
                   >
-                    <h4 className="text-4xl font-bold mb-2 group-hover:text-primary transition-colors">
-                      AI Valley
-                    </h4>
-                    <p className="text-dark/70 flex items-center justify-center gap-2">
-                      Where AI meets Absurdity
-                      <ExternalLink className="w-4 h-4" />
-                    </p>
+                    <div className="flex flex-col items-center gap-4">
+                      <Image 
+                        src="/ai-valley.png" 
+                        alt="AI Valley" 
+                        width={200} 
+                        height={60}
+                        className="h-16 w-auto group-hover:scale-110 transition-transform"
+                        onError={(e) => {
+                          // If image doesn't exist, hide it and show text instead
+                          e.currentTarget.style.display = 'none';
+                          const textFallback = document.getElementById('ai-valley-text-fallback');
+                          if (textFallback) textFallback.style.display = 'block';
+                        }}
+                      />
+                      <h4 id="ai-valley-text-fallback" className="text-4xl font-bold group-hover:text-primary transition-colors" style={{ display: 'none' }}>
+                        AI Valley
+                      </h4>
+                      <p className="text-dark/70 flex items-center justify-center gap-2">
+                        Where AI meets Absurdity
+                        <ExternalLink className="w-4 h-4" />
+                      </p>
+                    </div>
                   </motion.div>
                 </Link>
                 <p className="text-white/70 mt-4 max-w-2xl mx-auto">

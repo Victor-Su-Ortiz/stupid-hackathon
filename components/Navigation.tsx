@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn, getRandomColor } from "@/lib/utils";
 import { AIVALLEY_URL, CONTACT_EMAIL } from "@/lib/constants";
@@ -56,7 +57,20 @@ export default function Navigation() {
               className="hidden md:flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full hover:bg-white/30 transition-colors"
             >
               <span className="text-sm text-white">In collaboration with</span>
-              <span className="font-bold text-white">AI Valley</span>
+              <div className="flex items-center gap-1">
+                <Image 
+                  src="/ai-valley.png" 
+                  alt="AI Valley" 
+                  width={80} 
+                  height={24}
+                  className="h-6 w-auto"
+                  onError={(e) => {
+                    // Fallback to text if image doesn't exist
+                    e.currentTarget.style.display = 'none';
+                  }}
+                />
+                <span className="font-bold text-white">AI Valley</span>
+              </div>
             </Link>
           </div>
 
@@ -95,7 +109,19 @@ export default function Navigation() {
                 className="flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-3 py-2 rounded-lg"
               >
                 <span className="text-sm text-white">In collaboration with</span>
-                <span className="font-bold text-white">AI Valley</span>
+                <div className="flex items-center gap-1">
+                  <Image 
+                    src="/ai-valley.png" 
+                    alt="AI Valley" 
+                    width={60} 
+                    height={20}
+                    className="h-5 w-auto"
+                    onError={(e) => {
+                      e.currentTarget.style.display = 'none';
+                    }}
+                  />
+                  <span className="font-bold text-white">AI Valley</span>
+                </div>
               </Link>
               {menuItems.map((item) => (
                 <Link
