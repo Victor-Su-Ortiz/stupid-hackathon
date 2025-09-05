@@ -84,6 +84,15 @@ export default function AboutSection() {
                   scale: hoveredCard === index ? 1.05 : 1,
                 }}
                 transition={{ duration: 0.3 }}
+                whileHover={{
+                  scale: 1.08,
+                  boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+                  transition: { duration: 0.2 }
+                }}
+                whileTap={{
+                  scale: 0.95,
+                  rotate: [0, -5, 5, 0]
+                }}
               >
                 <div className="text-white">
                   <div className="mb-4 inline-block p-3 bg-white/20 rounded-lg">

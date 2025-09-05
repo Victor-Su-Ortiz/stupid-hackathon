@@ -26,11 +26,11 @@ export default function Navigation() {
   }, []);
 
   const menuItems = [
-    { href: "#about", label: "About" },
-    { href: "#schedule", label: "Schedule" },
-    { href: "#projects", label: "Projects" },
-    { href: "#sponsors", label: "Sponsors" },
-    { href: `mailto:${CONTACT_EMAIL}`, label: "Contact" },
+    { href: "#about", label: "About", emoji: "📖" },
+    { href: "#schedule", label: "Schedule", emoji: "⏳" },
+    { href: "#projects", label: "Projects", emoji: "💡" },
+    { href: "#sponsors", label: "Sponsors", emoji: "💸" },
+    { href: `mailto:${CONTACT_EMAIL}`, label: "Contact", emoji: "📬" },
   ];
 
   return (
@@ -80,11 +80,12 @@ export default function Navigation() {
               <Link
                 key={item.href}
                 href={item.href}
-                className="text-white hover:text-accent transition-colors hover:scale-110 transform"
+                className="text-white hover:text-accent transition-all hover:scale-110 transform flex items-center gap-2"
                 style={{ 
                   fontFamily: Math.random() > 0.7 ? "'Comic Sans MS', cursive" : "inherit" 
                 }}
               >
+                <span className="text-lg">{item.emoji}</span>
                 {item.label}
               </Link>
             ))}
@@ -127,9 +128,10 @@ export default function Navigation() {
                 <Link
                   key={item.href}
                   href={item.href}
-                  className="text-white hover:text-accent transition-colors text-lg"
+                  className="text-white hover:text-accent transition-colors text-lg flex items-center gap-2"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
+                  <span className="text-lg">{item.emoji}</span>
                   {item.label}
                 </Link>
               ))}

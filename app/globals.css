@@ -9,6 +9,25 @@
   --light: #F7F7F7;
   --background: #ffffff;
   --foreground: #2C3E50;
+  
+  /* Matcha-inspired colors */
+  --matcha-light: #E8F5E8;
+  --matcha-medium: #A8D5A8;
+  --matcha-dark: #6B8E6B;
+  --matcha-accent: #4A7C59;
+  
+  /* Studio Ghibli inspired */
+  --ghibli-sky: #87CEEB;
+  --ghibli-cloud: #F0F8FF;
+  --ghibli-grass: #9ACD32;
+  --ghibli-earth: #8B4513;
+  --ghibli-sunset: #FFB6C1;
+  
+  /* AI Art vibes */
+  --ai-purple: #8A2BE2;
+  --ai-pink: #FF69B4;
+  --ai-cyan: #00FFFF;
+  --ai-gradient: linear-gradient(45deg, #8A2BE2, #FF69B4, #00FFFF);
 }
 
 @theme inline {
@@ -20,6 +39,18 @@
   --color-light: var(--light);
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+  --color-matcha-light: var(--matcha-light);
+  --color-matcha-medium: var(--matcha-medium);
+  --color-matcha-dark: var(--matcha-dark);
+  --color-matcha-accent: var(--matcha-accent);
+  --color-ghibli-sky: var(--ghibli-sky);
+  --color-ghibli-cloud: var(--ghibli-cloud);
+  --color-ghibli-grass: var(--ghibli-grass);
+  --color-ghibli-earth: var(--ghibli-earth);
+  --color-ghibli-sunset: var(--ghibli-sunset);
+  --color-ai-purple: var(--ai-purple);
+  --color-ai-pink: var(--ai-pink);
+  --color-ai-cyan: var(--ai-cyan);
   --font-sans: var(--font-inter);
   --font-mono: var(--font-geist-mono);
   --font-comic: "Comic Sans MS", cursive, sans-serif;
@@ -95,6 +126,134 @@ body {
   50% { transform: translateY(-10px); }
 }
 
+@keyframes mascot-float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg) scale(1);
+  }
+  25% { 
+    transform: translateY(-15px) rotate(2deg) scale(1.05);
+  }
+  50% { 
+    transform: translateY(-8px) rotate(-1deg) scale(0.95);
+  }
+  75% { 
+    transform: translateY(-12px) rotate(1deg) scale(1.02);
+  }
+}
+
+@keyframes confetti-burst {
+  0% { 
+    transform: scale(0) rotate(0deg);
+    opacity: 1;
+  }
+  50% { 
+    transform: scale(1.2) rotate(180deg);
+    opacity: 0.8;
+  }
+  100% { 
+    transform: scale(0.8) rotate(360deg);
+    opacity: 0;
+  }
+}
+
+@keyframes glow-pulse {
+  0%, 100% { 
+    text-shadow: 0 0 5px rgba(255, 107, 107, 0.3);
+  }
+  50% { 
+    text-shadow: 0 0 20px rgba(255, 107, 107, 0.6), 0 0 30px rgba(78, 205, 196, 0.4);
+  }
+}
+
+@keyframes parallax-slow {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+@keyframes parallax-fast {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-20px); }
+}
+
+@keyframes peek {
+  0%, 90% { transform: translateX(-100%); }
+  95%, 100% { transform: translateX(0); }
+}
+
+/* AI Art inspired animations */
+@keyframes ai-glow {
+  0%, 100% { 
+    filter: brightness(1.2) hue-rotate(0deg);
+  }
+  50% { 
+    filter: brightness(1.5) hue-rotate(180deg);
+  }
+}
+
+@keyframes ghibli-float {
+  0%, 100% { 
+    transform: translateY(0px) rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  25% { 
+    transform: translateY(-10px) rotate(1deg);
+    filter: hue-rotate(90deg);
+  }
+  50% { 
+    transform: translateY(-5px) rotate(-1deg);
+    filter: hue-rotate(180deg);
+  }
+  75% { 
+    transform: translateY(-15px) rotate(0.5deg);
+    filter: hue-rotate(270deg);
+  }
+}
+
+@keyframes matcha-sway {
+  0%, 100% { 
+    transform: rotate(-2deg) scale(1);
+  }
+  25% { 
+    transform: rotate(1deg) scale(1.02);
+  }
+  50% { 
+    transform: rotate(-1deg) scale(0.98);
+  }
+  75% { 
+    transform: rotate(2deg) scale(1.01);
+  }
+}
+
+@keyframes artistic-float {
+  0%, 100% { 
+    transform: translateY(0px) translateX(0px) rotate(0deg);
+    opacity: 0.8;
+  }
+  33% { 
+    transform: translateY(-20px) translateX(10px) rotate(120deg);
+    opacity: 1;
+  }
+  66% { 
+    transform: translateY(-10px) translateX(-10px) rotate(240deg);
+    opacity: 0.9;
+  }
+}
+
+@keyframes ghibli-clouds {
+  0% { 
+    transform: translateX(-100px) translateY(0px);
+    opacity: 0.3;
+  }
+  50% { 
+    transform: translateX(0px) translateY(-10px);
+    opacity: 0.7;
+  }
+  100% { 
+    transform: translateX(100px) translateY(0px);
+    opacity: 0.3;
+  }
+}
+
 .wiggle {
   animation: wiggle 0.5s ease-in-out infinite;
 }
@@ -113,6 +272,125 @@ body {
 
 .bounce {
   animation: bounce 1s ease-in-out infinite;
+}
+
+.mascot-float {
+  animation: mascot-float 4s ease-in-out infinite;
+}
+
+.confetti-burst {
+  animation: confetti-burst 0.6s ease-out forwards;
+}
+
+.glow-pulse {
+  animation: glow-pulse 2s ease-in-out infinite;
+}
+
+.parallax-slow {
+  animation: parallax-slow 6s ease-in-out infinite;
+}
+
+.parallax-fast {
+  animation: parallax-fast 4s ease-in-out infinite;
+}
+
+.peek {
+  animation: peek 8s ease-in-out infinite;
+}
+
+.ai-glow {
+  animation: ai-glow 3s ease-in-out infinite;
+}
+
+.ghibli-float {
+  animation: ghibli-float 6s ease-in-out infinite;
+}
+
+.matcha-sway {
+  animation: matcha-sway 4s ease-in-out infinite;
+}
+
+.artistic-float {
+  animation: artistic-float 8s ease-in-out infinite;
+}
+
+.ghibli-clouds {
+  animation: ghibli-clouds 20s linear infinite;
+}
+
+/* Glassmorphism effect */
+.glassmorphism {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+
+/* Removed btn-enhanced class and all flashing effects */
+
+/* Interactive cursor */
+.interactive-cursor {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: linear-gradient(45deg, var(--primary), var(--secondary));
+  transform: translate(-50%, -50%);
+  transition: all 0.1s ease;
+  mix-blend-mode: difference;
+}
+
+.interactive-cursor.hover {
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(45deg, var(--accent), var(--chaos));
+}
+
+/* Click effects */
+.click-effect {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9998;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background: var(--primary);
+  animation: click-ripple 0.6s ease-out;
+}
+
+@keyframes click-ripple {
+  0% {
+    transform: scale(0);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(20);
+    opacity: 0;
+  }
+}
+
+/* Particle effects */
+.particle {
+  position: fixed;
+  pointer-events: none;
+  z-index: 9997;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  animation: particle-float 2s ease-out forwards;
+}
+
+@keyframes particle-float {
+  0% {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100px) scale(0);
+    opacity: 0;
+  }
 }
 
 /* Stupid cursor trail */

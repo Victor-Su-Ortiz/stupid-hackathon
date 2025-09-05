@@ -11,6 +11,12 @@ import Sponsors from "@/components/Sponsors";
 import PrizeSection from "@/components/PrizeSection";
 import Footer from "@/components/Footer";
 import KonamiCode from "@/components/KonamiCode";
+import InteractiveCursor from "@/components/InteractiveCursor";
+import ChaosModeToggle from "@/components/ChaosModeToggle";
+import InteractiveMiniGame from "@/components/InteractiveMiniGame";
+import GhibliBackground from "@/components/GhibliBackground";
+import AIArtEffects from "@/components/AIArtEffects";
+import MatchaElements from "@/components/MatchaElements";
 
 export default function Home() {
   useEffect(() => {
@@ -31,6 +37,12 @@ export default function Home() {
 
   return (
     <>
+      <GhibliBackground />
+      <AIArtEffects />
+      <MatchaElements />
+      <InteractiveCursor />
+      <ChaosModeToggle />
+      <InteractiveMiniGame />
       <KonamiCode />
       <Navigation />
       <main className="overflow-x-hidden">
@@ -39,8 +51,8 @@ export default function Home() {
         <EventDetails />
         <Schedule />
         <ProjectsGallery />
-        <Sponsors />
         <PrizeSection />
+        <Sponsors />
       </main>
       <Footer />
     </>
