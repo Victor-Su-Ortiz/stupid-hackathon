@@ -343,11 +343,4 @@ body {
   font-family: "Comic Sans MS", cursive, sans-serif !important;
 }
 
-/* Chaos mode styles */
-body.chaos-mode {
-  animation: glitch 0.3s linear infinite;
-}
-
-body.chaos-mode * {
-  animation-duration: 0.5s !important;
-}
+/* Chaos mode styles removed */
