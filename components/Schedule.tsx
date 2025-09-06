@@ -23,17 +23,17 @@ export default function Schedule() {
     <section id="schedule" className="py-20 bg-white relative overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-5">
-        {Array.from({ length: 20 }, (_, i) => (
+        {Array.from({ length: 8 }, (_, i) => (
           <motion.div
             key={i}
             className="absolute text-6xl"
-            initial={{
-              x: Math.random() * 100 + "%",
-              y: Math.random() * 100 + "%",
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
             }}
             animate={{
-              x: Math.random() * 100 + "%",
-              y: Math.random() * 100 + "%",
+              x: [-10, 10, -10],
+              y: [-10, 10, -10],
             }}
             transition={{
               duration: 20,

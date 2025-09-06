@@ -20,13 +20,15 @@ export default function Sponsors() {
     <section id="sponsors" className="py-20 bg-dark text-white relative overflow-hidden">
       {/* Animated Background */}
       <div className="absolute inset-0">
-        {Array.from({ length: 30 }, (_, i) => (
+        {Array.from({ length: 10 }, (_, i) => (
           <motion.div
             key={i}
             className="absolute text-4xl opacity-10"
+            style={{
+              left: `${Math.random() * 100}%`,
+              top: `${Math.random() * 100}%`,
+            }}
             initial={{
-              x: Math.random() * 100 + "%",
-              y: Math.random() * 100 + "%",
               scale: 0,
             }}
             animate={{

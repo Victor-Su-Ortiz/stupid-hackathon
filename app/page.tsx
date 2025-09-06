@@ -11,13 +11,15 @@ import Sponsors from "@/components/Sponsors";
 import PrizeSection from "@/components/PrizeSection";
 import Footer from "@/components/Footer";
 import KonamiCode from "@/components/KonamiCode";
+import ChaosModeToggle from "@/components/ChaosModeToggle";
+import GhibliBackground from "@/components/GhibliBackground";
 
 export default function Home() {
   useEffect(() => {
     // Add random page behaviors
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      if (scrollY > 100 && Math.random() > 0.99) {
+      if (scrollY > 100 && Math.random() > 0.995) {
         document.body.style.transform = `rotate(${Math.random() * 2 - 1}deg)`;
         setTimeout(() => {
           document.body.style.transform = "rotate(0deg)";
@@ -31,6 +33,8 @@ export default function Home() {
 
   return (
     <>
+      <GhibliBackground />
+      <ChaosModeToggle />
       <KonamiCode />
       <Navigation />
       <main className="overflow-x-hidden">
@@ -39,8 +43,8 @@ export default function Home() {
         <EventDetails />
         <Schedule />
         <ProjectsGallery />
-        <Sponsors />
         <PrizeSection />
+        <Sponsors />
       </main>
       <Footer />
     </>

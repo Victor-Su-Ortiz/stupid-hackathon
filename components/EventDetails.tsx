@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Clock, Users } from "lucide-react";
-import { EVENT_DATE } from "@/lib/constants";
+import { EVENT_DATE, LUMA_REGISTRATION_URL } from "@/lib/constants";
 
 export default function EventDetails() {
   const [timeLeft, setTimeLeft] = useState({
@@ -167,15 +167,18 @@ export default function EventDetails() {
             </div>
 
             {/* Registration Button that moves */}
-            <motion.button
-              className="w-full bg-gradient-to-r from-primary to-secondary text-white font-bold py-4 px-6 rounded-full shadow-lg transition-all"
+            <motion.a
+              href={LUMA_REGISTRATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block w-full bg-gradient-to-r from-primary to-secondary text-white font-bold py-4 px-6 rounded-full shadow-lg transition-all text-center"
               animate={{ x: buttonPosition.x, y: buttonPosition.y }}
               onMouseEnter={handleMouseEnter}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
               Register Now (If you can click me) 🎯
-            </motion.button>
+            </motion.a>
           </motion.div>
         </div>
 

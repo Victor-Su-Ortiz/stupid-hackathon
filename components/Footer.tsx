@@ -20,7 +20,7 @@ export default function Footer() {
 
   const footerLinks = [
     { href: AIVALLEY_URL, label: "AI Valley", external: true },
-    { href: `mailto:${CONTACT_EMAIL}`, label: "Contact", external: false },
+    { href: AIVALLEY_URL, label: "Contact", external: true },
     { href: "#", label: "Past Hackathons", external: false },
     { href: "#", label: "Code of Conduct", external: false },
   ];
@@ -101,11 +101,12 @@ export default function Footer() {
           <div>
             <h4 className="text-xl font-semibold mb-4">Get in Touch</h4>
             <a
-              href={`mailto:${CONTACT_EMAIL}`}
+              href={AIVALLEY_URL}
+              target="_blank"
               className="flex items-center gap-2 text-light/80 hover:text-accent transition-colors mb-4"
             >
-              <Mail size={18} />
-              {CONTACT_EMAIL}
+              <ExternalLink size={18} />
+              AI Valley
             </a>
             <div className="flex gap-4">
               {socialIcons.map((icon, index) => (
