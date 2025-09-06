@@ -327,71 +327,7 @@ body {
 }
 
 /* Removed btn-enhanced class and all flashing effects */
-
-/* Interactive cursor */
-.interactive-cursor {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9999;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background: linear-gradient(45deg, var(--primary), var(--secondary));
-  transform: translate(-50%, -50%);
-  transition: all 0.1s ease;
-  mix-blend-mode: difference;
-}
-
-.interactive-cursor.hover {
-  width: 40px;
-  height: 40px;
-  background: linear-gradient(45deg, var(--accent), var(--chaos));
-}
-
-/* Click effects */
-.click-effect {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9998;
-  width: 4px;
-  height: 4px;
-  border-radius: 50%;
-  background: var(--primary);
-  animation: click-ripple 0.6s ease-out;
-}
-
-@keyframes click-ripple {
-  0% {
-    transform: scale(0);
-    opacity: 1;
-  }
-  100% {
-    transform: scale(20);
-    opacity: 0;
-  }
-}
-
-/* Particle effects */
-.particle {
-  position: fixed;
-  pointer-events: none;
-  z-index: 9997;
-  width: 6px;
-  height: 6px;
-  border-radius: 50%;
-  animation: particle-float 2s ease-out forwards;
-}
-
-@keyframes particle-float {
-  0% {
-    transform: translateY(0) scale(1);
-    opacity: 1;
-  }
-  100% {
-    transform: translateY(-100px) scale(0);
-    opacity: 0;
-  }
-}
+/* Removed interactive cursor and particle effects for performance */
 
 /* Stupid cursor trail */
 .duck-trail {

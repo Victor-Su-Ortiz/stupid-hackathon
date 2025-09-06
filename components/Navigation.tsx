@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn, getRandomColor } from "@/lib/utils";
-import { AIVALLEY_URL, CONTACT_EMAIL } from "@/lib/constants";
+import { AIVALLEY_URL, CONTACT_EMAIL, LUMA_REGISTRATION_URL } from "@/lib/constants";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -30,7 +30,7 @@ export default function Navigation() {
     { href: "#schedule", label: "Schedule", emoji: "⏳" },
     { href: "#projects", label: "Projects", emoji: "💡" },
     { href: "#sponsors", label: "Sponsors", emoji: "💸" },
-    { href: `mailto:${CONTACT_EMAIL}`, label: "Contact", emoji: "📬" },
+    { href: AIVALLEY_URL, label: "Contact", emoji: "📬" },
   ];
 
   return (
@@ -89,6 +89,14 @@ export default function Navigation() {
                 {item.label}
               </Link>
             ))}
+            <Link
+              href={LUMA_REGISTRATION_URL}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-4 py-2 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-all hover:scale-110 transform"
+            >
+              Register Now 🎪
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -135,6 +143,15 @@ export default function Navigation() {
                   {item.label}
                 </Link>
               ))}
+              <Link
+                href={LUMA_REGISTRATION_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="px-4 py-2 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-colors text-center"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                Register Now 🎪
+              </Link>
             </div>
           </div>
         )}

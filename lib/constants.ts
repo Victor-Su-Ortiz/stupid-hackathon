@@ -1,6 +1,7 @@
 export const AIVALLEY_URL = process.env.NEXT_PUBLIC_AIVALLEY_URL || "https://aivalley.io";
 export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_EMAIL || "community@aivalley.io";
 export const EVENT_DATE = process.env.NEXT_PUBLIC_EVENT_DATE || "2025-09-20";
+export const LUMA_REGISTRATION_URL = "https://luma.com/b9rho18z";
 
 export const STUPID_EMOJIS = ["🤪", "🎪", "🤖", "💩", "🦆", "🍌", "🎨", "🚀", "🎭", "🤡"];
 

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { STUPID_EMOJIS, AIVALLEY_URL } from "@/lib/constants";
+import { STUPID_EMOJIS, AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
 import { randomFromArray } from "@/lib/utils";
 
 export default function HeroSection() {
@@ -29,14 +29,17 @@ export default function HeroSection() {
   }, []);
 
   useEffect(() => {
-    const width = typeof window !== 'undefined' ? window.innerWidth : 1200;
-    const height = typeof window !== 'undefined' ? window.innerHeight : 800;
+    // Only generate emojis on client side
+    if (typeof window === 'undefined') return;
     
-    const emojis = Array.from({ length: 15 }, (_, i) => ({
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+    
+    const emojis = Array.from({ length: 5 }, (_, i) => ({
       emoji: randomFromArray(STUPID_EMOJIS),
       id: i,
-      x: Math.random() * width,
-      y: Math.random() * height,
+      x: Math.random() * (width - 100), // Subtract emoji size to prevent overflow
+      y: Math.random() * (height - 100),
       speed: Math.random() > 0.5 ? 'slow' : 'fast' as 'slow' | 'fast',
     }));
     setFloatingEmojis(emojis);
@@ -55,26 +58,25 @@ export default function HeroSection() {
           <motion.div
             key={item.id}
             className={`absolute text-6xl opacity-30 ${item.speed === 'slow' ? 'parallax-slow' : 'parallax-fast'}`}
+            style={{
+              left: `${item.x}px`,
+              top: `${item.y}px`,
+            }}
             initial={{
-              x: item.x,
-              y: item.y,
+              x: 0,
+              y: 0,
               rotate: 0,
             }}
             animate={{
-              x: item.x + (Math.random() - 0.5) * 200,
-              y: item.y + (Math.random() - 0.5) * 200,
-              rotate: 360,
+              x: (Math.random() - 0.5) * 100,
+              y: (Math.random() - 0.5) * 100,
+              rotate: 180,
             }}
             transition={{
-              duration: 20 + Math.random() * 20,
+              duration: 30 + Math.random() * 10,
               repeat: Infinity,
               repeatType: "reverse",
               ease: "linear",
-            }}
-            whileHover={{
-              scale: 1.2,
-              rotate: 0,
-              transition: { duration: 0.3 }
             }}
             onClick={() => {
               // Create explosion effect when clicking emojis
@@ -179,7 +181,9 @@ export default function HeroSection() {
           transition={{ delay: 1 }}
         >
           <motion.a
-            href="#register"
+            href={LUMA_REGISTRATION_URL}
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-8 py-4 bg-white text-primary font-bold text-lg rounded-full shadow-lg"
             whileHover={{ 
               scale: 1.05,
