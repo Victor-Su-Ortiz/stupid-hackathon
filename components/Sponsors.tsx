@@ -6,15 +6,6 @@ import Image from "next/image";
 import { ExternalLink, Sparkles } from "lucide-react";
 import { AIVALLEY_URL, CONTACT_EMAIL, SPONSOR_BENEFITS } from "@/lib/constants";
 
-const dummySponsors = [
-  { name: "TechCorp", logo: "🏢", level: "gold" },
-  { name: "StartupXYZ", logo: "🚀", level: "silver" },
-  { name: "CodeFactory", logo: "⚙️", level: "silver" },
-  { name: "InnovateCo", logo: "💡", level: "bronze" },
-  { name: "DigitalWave", logo: "🌊", level: "bronze" },
-  { name: "FutureTech", logo: "🔮", level: "bronze" },
-];
-
 export default function Sponsors() {
   return (
     <section id="sponsors" className="py-20 bg-dark text-white relative overflow-hidden">
@@ -121,34 +112,52 @@ export default function Sponsors() {
           </div>
         </motion.div>
 
-        {/* Other Sponsors Grid */}
-        <div className="grid md:grid-cols-3 gap-6 mb-16">
-          {dummySponsors.map((sponsor, index) => (
+        {/* Google Sponsor Section */}
+        <motion.div
+          initial={{ opacity: 0, scale: 0.9 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          className="mb-16"
+        >
+          <div className="text-center mb-8">
+            <h3 className="text-3xl font-bold text-white mb-2">Our Amazing Sponsor</h3>
+            <p className="text-white/70">Supporting innovation through absurdity</p>
+          </div>
+          <div className="max-w-md mx-auto">
             <motion.div
-              key={index}
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              viewport={{ once: true }}
-              transition={{ delay: index * 0.1 }}
-              className={`bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center ${
-                sponsor.level === "gold" ? "md:col-span-2" : ""
-              }`}
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-12 text-center"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring" }}
             >
-              <motion.div
-                className="text-6xl mb-4"
-                whileHover={{ 
-                  rotate: [0, -10, 10, -10, 10, 0],
-                  scale: 1.2,
-                }}
-                transition={{ duration: 0.5 }}
+              <Link
+                href="https://google.com"
+                target="_blank"
+                className="group inline-block"
               >
-                {sponsor.logo}
-              </motion.div>
-              <h4 className="text-xl font-bold text-white mb-2">{sponsor.name}</h4>
-              <p className="text-white/60 capitalize">{sponsor.level} Sponsor</p>
+                <motion.div
+                  className="bg-white text-dark px-8 py-6 rounded-xl shadow-xl"
+                  whileHover={{ 
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  <div className="flex flex-col items-center gap-4">
+                    <Image 
+                      src="/google.png" 
+                      alt="Google" 
+                      width={160} 
+                      height={54}
+                      className="h-14 w-auto group-hover:scale-110 transition-transform"
+                    />
+                    <p className="text-dark/70 flex items-center justify-center gap-2">
+                      Empowering developers to build the unthinkable
+                      <ExternalLink className="w-4 h-4" />
+                    </p>
+                  </div>
+                </motion.div>
+              </Link>
             </motion.div>
-          ))}
-        </div>
+          </div>
+        </motion.div>
 
         {/* Become a Sponsor CTA */}
         <motion.div
