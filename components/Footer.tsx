@@ -3,8 +3,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Mail, ExternalLink, Heart } from "lucide-react";
-import { AIVALLEY_URL, CONTACT_EMAIL } from "@/lib/constants";
+import { ExternalLink, Heart } from "lucide-react";
+import { AIVALLEY_URL } from "@/lib/constants";
 
 export default function Footer() {
   // Removed rotating emoji for cleaner design

@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Menu, X } from "lucide-react";
 import { cn, getRandomColor } from "@/lib/utils";
-import { AIVALLEY_URL, CONTACT_EMAIL, LUMA_REGISTRATION_URL } from "@/lib/constants";
+import { AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
 
 export default function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false);
