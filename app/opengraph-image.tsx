@@ -2,7 +2,7 @@ import { ImageResponse } from 'next/og'
 
 export const runtime = 'edge'
 
-export const alt = 'The Stupid Hackathon - In collaboration with AI Valley'
+export const alt = 'The Dumb Hackathon - In collaboration with AI Valley'
 export const size = {
   width: 1200,
   height: 630,
@@ -27,7 +27,7 @@ export default async function Image() {
       >
         <div style={{ fontSize: '100px', marginBottom: '20px' }}>🤪🎪🤖</div>
         <div style={{ fontSize: '72px', fontWeight: 'bold', color: 'white', marginBottom: '20px' }}>
-          The Stupid Hackathon
+          The Dumb Hackathon
         </div>
         <div style={{ fontSize: '36px', color: 'white', marginBottom: '40px' }}>
           Build the dumbest thing you can imagine

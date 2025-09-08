@@ -48,7 +48,7 @@ git push origin main
 2. Navigate to **Settings** → **General**
 3. Verify these settings:
    - **Framework Preset**: `Next.js`
-   - **Root Directory**: Leave empty or `.` (NOT `./stupid-hackathon-website`)
+   - **Root Directory**: Leave empty or `.` (NOT `./dumb-hackathon-website`)
    - **Build Command**: `npm run build`
    - **Output Directory**: `.next`
    - **Install Command**: `npm install`
@@ -140,7 +140,7 @@ Your repository structure should be:
 NOT like this:
 ```
 /your-repo-root/
-└── stupid-hackathon-website/
+└── dumb-hackathon-website/
     ├── app/
     ├── package.json
     └── ...

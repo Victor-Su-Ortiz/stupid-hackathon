@@ -1,6 +1,6 @@
-# 🤪 The Stupid Hackathon Website
+# 🤪 The Dumb Hackathon Website
 
-A gloriously absurd website for The Stupid Hackathon, in collaboration with AI Valley. Built with Next.js 15, this site celebrates the joy of building utterly pointless things.
+A gloriously absurd website for The Dumb Hackathon, in collaboration with AI Valley. Built with Next.js 15, this site celebrates the joy of building utterly pointless things.
 
 ## 🚀 Getting Started
 
@@ -14,7 +14,7 @@ A gloriously absurd website for The Stupid Hackathon, in collaboration with AI V
 1. Clone the repository:
 ```bash
 git clone <your-repo-url>
-cd stupid-hackathon-website
+cd dumb-hackathon-website
 ```
 
 2. Install dependencies:
@@ -57,7 +57,7 @@ npm run dev
 - **Konami Code**: Press ↑↑↓↓←→←→BA for a confetti surprise!
 - **Duck Trail**: Mouse cursor leaves a trail of rubber ducks (activates after 3 seconds)
 - **Random Page Tilts**: Occasionally the page will tilt slightly while scrolling
-- **Comic Sans Appearances**: Random elements use Comic Sans for maximum stupidity
+- **Comic Sans Appearances**: Random elements use Comic Sans for maximum dumbness
 - **Wiggling Buttons**: CTAs wiggle on hover
 - **Moving Registration Button**: Try to click it... if you can!
 
@@ -75,7 +75,7 @@ npm run dev
 ## 📁 Project Structure
 
 ```
-stupid-hackathon-website/
+dumb-hackathon-website/
 ├── app/
 │   ├── globals.css       # Global styles and animations
 │   ├── layout.tsx        # Root layout with metadata
@@ -130,7 +130,7 @@ npm start      # Run production build locally
 - **Benefits**: 
   - Logo displayed prominently (and ridiculously)
   - Shoutouts during the event (in Comic Sans)
-  - Association with gloriously stupid projects
+  - Association with gloriously dumb projects
   - Networking with creative chaos agents
 
 ## 📧 Contact
@@ -155,10 +155,10 @@ For all inquiries, sponsorships, and collaboration:
 
 ## 📝 License
 
-This project is licensed under the "Do Whatever You Want But Keep It Stupid" License.
+This project is licensed under the "Do Whatever You Want But Keep It Dumb" License.
 
 ---
 
-*Remember: The goal is to create a website that's professional in execution but absolutely ridiculous in spirit. Make it memorable, make it fun, and most importantly, make it stupid!*
+*Remember: The goal is to create a website that's professional in execution but absolutely ridiculous in spirit. Make it memorable, make it fun, and most importantly, make it dumb!*
 
 Built with 💩 and questionable judgment by the AI Valley community.

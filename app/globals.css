@@ -329,7 +329,7 @@ body {
 /* Removed btn-enhanced class and all flashing effects */
 /* Removed interactive cursor and particle effects for performance */
 
-/* Stupid cursor trail */
+/* Dumb cursor trail */
 .duck-trail {
   position: fixed;
   pointer-events: none;
@@ -338,7 +338,7 @@ body {
   animation: float 2s ease-in-out infinite;
 }
 
-/* Comic Sans for maximum stupidity */
+/* Comic Sans for maximum dumbness */
 .comic-sans {
   font-family: "Comic Sans MS", cursive, sans-serif !important;
 }

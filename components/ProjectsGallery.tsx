@@ -118,7 +118,7 @@ export default function ProjectsGallery() {
                       onClick={() => handleVote(currentIndex)}
                     >
                       <Trophy className="w-5 h-5" />
-                      Vote for Most Stupid
+                      Vote for Most Dumb
                       {votes[currentIndex] && (
                         <span className="bg-white/20 px-2 py-1 rounded-full text-sm">
                           {votes[currentIndex]}

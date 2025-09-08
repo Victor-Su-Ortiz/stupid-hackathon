@@ -2,8 +2,8 @@ import { MetadataRoute } from 'next'
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'The Stupid Hackathon',
-    short_name: 'Stupid Hack',
+    name: 'The Dumb Hackathon',
+    short_name: 'Dumb Hack',
     description: 'Build the dumbest thing you can imagine',
     start_url: '/',
     display: 'standalone',

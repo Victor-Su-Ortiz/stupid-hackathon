@@ -13,21 +13,21 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "The Stupid Hackathon | Build Something Gloriously Useless",
+  title: "The Dumb Hackathon | Build Something Gloriously Useless",
   description: "Join the most absurd hackathon ever. Build dumb things, win a Labubu, and celebrate the joy of pointless programming. In collaboration with AI Valley.",
-  keywords: ["hackathon", "stupid hackathon", "AI Valley", "programming", "comedy", "tech event", "San Francisco"],
+  keywords: ["hackathon", "dumb hackathon", "AI Valley", "programming", "comedy", "tech event", "San Francisco"],
   authors: [{ name: "AI Valley", url: "https://aivalley.io" }],
-  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://stupidhackathon.vercel.app'),
+  metadataBase: new URL(process.env.NEXT_PUBLIC_BASE_URL || 'https://dumbhackathon.vercel.app'),
   openGraph: {
     type: "website",
     locale: "en_US",
-    title: "The Stupid Hackathon | Build Something Gloriously Useless",
+    title: "The Dumb Hackathon | Build Something Gloriously Useless",
     description: "Join the most absurd hackathon ever. Build dumb things, win a Labubu, and celebrate the joy of pointless programming. In collaboration with AI Valley.",
-    siteName: "The Stupid Hackathon",
+    siteName: "The Dumb Hackathon",
   },
   twitter: {
     card: "summary_large_image",
-    title: "The Stupid Hackathon | Build Something Gloriously Useless",
+    title: "The Dumb Hackathon | Build Something Gloriously Useless",
     description: "Join the most absurd hackathon ever. In collaboration with AI Valley.",
   },
   icons: {

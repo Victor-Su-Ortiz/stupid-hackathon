@@ -106,7 +106,7 @@ export default function PrizeSection() {
                     Limited Edition Labubu
                   </p>
                   <p className="text-center text-dark/70 text-sm">
-                    (Actual prize may vary in stupidity)
+                    (Actual prize may vary in dumbness)
                   </p>
                 </div>
 
@@ -215,7 +215,7 @@ export default function PrizeSection() {
                   <span className="text-accent font-bold">✗</span>
                 </p>
                 <p className="text-lg font-bold text-accent mt-2">
-                  Gloriously Stupid Labubu ✓
+                  Gloriously Dumb Labubu ✓
                 </p>
               </div>
             </motion.div>
@@ -234,10 +234,10 @@ export default function PrizeSection() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Win This Masterpiece of Stupidity 🎯
+              Win This Masterpiece of Dumbness 🎯
             </motion.button>
             <p className="text-white/70 mt-4 italic">
-              * Prize subject to availability and our definition of &quot;stupid&quot;
+              * Prize subject to availability and our definition of &quot;dumb&quot;
             </p>
           </motion.div>
         </div>

@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Mail, ExternalLink, Heart } from "lucide-react";
-import { AIVALLEY_URL, CONTACT_EMAIL, STUPID_EMOJIS } from "@/lib/constants";
+import { AIVALLEY_URL, CONTACT_EMAIL, DUMB_EMOJIS } from "@/lib/constants";
 import { randomFromArray } from "@/lib/utils";
 import { useState, useEffect } from "react";
 
@@ -13,7 +13,7 @@ export default function Footer() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      setRotatingEmoji(randomFromArray(STUPID_EMOJIS));
+      setRotatingEmoji(randomFromArray(DUMB_EMOJIS));
     }, 2000);
     return () => clearInterval(interval);
   }, []);
@@ -52,7 +52,7 @@ export default function Footer() {
           <div>
             <h3 className="text-2xl font-bold mb-4 comic-sans flex items-center gap-2">
               <span className="text-3xl spin-slow inline-block">{rotatingEmoji}</span>
-              Stupid Hackathon
+              Dumb Hackathon
             </h3>
             <p className="text-light/80 mb-4">
               Making the internet a weirder place, one hack at a time.
@@ -127,7 +127,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-light/60 text-sm">
-              © 2025 The Stupid Hackathon. All wrongs reserved. {rotatingEmoji}
+              © 2025 The Dumb Hackathon. All wrongs reserved. {rotatingEmoji}
             </p>
             <p className="text-light/60 text-sm flex items-center gap-1">
               Made with <Heart size={16} className="text-primary" /> and questionable judgment

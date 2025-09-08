@@ -1,4 +1,4 @@
-# 🚀 Vercel Deployment Guide for The Stupid Hackathon Website
+# 🚀 Vercel Deployment Guide for The Dumb Hackathon Website
 
 ## Fixed Issues
 

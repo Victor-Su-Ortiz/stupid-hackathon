@@ -47,7 +47,7 @@ export default function Sponsors() {
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="text-accent comic-sans">Companies Brave Enough</span>
             <br />
-            <span className="text-white">to Support Stupidity</span>
+            <span className="text-white">to Support Dumbness</span>
           </h2>
           <p className="text-xl text-white/80">
             These legends embrace chaos and questionable decision-making
@@ -191,7 +191,7 @@ export default function Sponsors() {
           </div>
 
           <motion.a
-            href={`mailto:${CONTACT_EMAIL}?subject=Sponsorship Inquiry - Stupid Hackathon`}
+            href={`mailto:${CONTACT_EMAIL}?subject=Sponsorship Inquiry - Dumb Hackathon`}
             className="inline-flex items-center gap-2 bg-dark text-white px-8 py-4 rounded-full font-bold text-lg shadow-2xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}

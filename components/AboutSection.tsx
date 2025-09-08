@@ -22,13 +22,13 @@ const cards = [
   {
     icon: <Coffee className="w-8 h-8" />,
     title: "Fueled by Madness",
-    description: "24 hours of pure, unfiltered stupidity. Caffeine, chaos, and Comic Sans. What could go wrong?",
+    description: "24 hours of pure, unfiltered dumbness. Caffeine, chaos, and Comic Sans. What could go wrong?",
     color: "from-accent to-orange-400",
     rotation: -2,
   },
   {
     icon: <Code className="w-8 h-8" />,
-    title: "Professional Stupidity",
+    title: "Professional Dumbness",
     description: "We take being dumb very seriously. Every line of code is carefully crafted to be magnificently pointless.",
     color: "from-chaos to-green-400",
     rotation: 3,
@@ -133,7 +133,7 @@ export default function AboutSection() {
           className="mt-16 text-center"
         >
           <div className="inline-block bg-white rounded-2xl shadow-xl p-8">
-            <h3 className="text-2xl font-bold mb-4 text-dark">Fun Facts About Our Stupidity</h3>
+            <h3 className="text-2xl font-bold mb-4 text-dark">Fun Facts About Our Dumbness</h3>
             <div className="grid md:grid-cols-3 gap-8">
               <div>
                 <p className="text-4xl font-bold text-primary mb-2">100%</p>

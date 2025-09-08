@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { STUPID_EMOJIS, AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
+import { DUMB_EMOJIS, AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
 import { randomFromArray } from "@/lib/utils";
 
 export default function HeroSection() {
@@ -36,7 +36,7 @@ export default function HeroSection() {
     const height = window.innerHeight;
     
     const emojis = Array.from({ length: 5 }, (_, i) => ({
-      emoji: randomFromArray(STUPID_EMOJIS),
+      emoji: randomFromArray(DUMB_EMOJIS),
       id: i,
       x: Math.random() * (width - 100), // Subtract emoji size to prevent overflow
       y: Math.random() * (height - 100),
@@ -159,7 +159,7 @@ export default function HeroSection() {
           whileHover={{ scale: 1.05 }}
         >
           <span className="inline-block">🛠️</span>{" "}
-          <span className="comic-sans">The Stupid Hackathon</span>
+          <span className="comic-sans">The Dumb Hackathon</span>
         </motion.h1>
 
         {/* Typewriter Tagline */}
