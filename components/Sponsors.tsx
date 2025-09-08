@@ -170,7 +170,7 @@ export default function Sponsors() {
             Join the Madness as a Sponsor!
           </h3>
           <p className="text-dark/80 text-xl mb-6">
-            $2,000 flat rate to be associated with glorious failure
+            $3,000 flat rate to be associated with glorious failure
           </p>
 
           {/* Benefits */}

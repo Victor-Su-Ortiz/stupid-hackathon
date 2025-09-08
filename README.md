@@ -125,7 +125,7 @@ npm start      # Run production build locally
 **[AI Valley](https://aivalley.io)** - Where AI meets Absurdity
 
 ### Sponsorship Opportunities
-- **Flat Rate**: $2,000
+- **Flat Rate**: $3,000
 - **Contact**: community@aivalley.io
 - **Benefits**: 
   - Logo displayed prominently (and ridiculously)
