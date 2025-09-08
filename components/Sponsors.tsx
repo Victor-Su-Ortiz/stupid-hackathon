@@ -9,33 +9,8 @@ import { AIVALLEY_URL, CONTACT_EMAIL, SPONSOR_BENEFITS } from "@/lib/constants";
 export default function Sponsors() {
   return (
     <section id="sponsors" className="py-20 bg-dark text-white relative overflow-hidden">
-      {/* Animated Background */}
-      <div className="absolute inset-0">
-        {Array.from({ length: 10 }, (_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-4xl opacity-10"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            initial={{
-              scale: 0,
-            }}
-            animate={{
-              scale: [0, 1, 0],
-              rotate: 360,
-            }}
-            transition={{
-              duration: 10,
-              delay: i * 0.2,
-              repeat: Infinity,
-            }}
-          >
-            💰
-          </motion.div>
-        ))}
-      </div>
+      {/* Clean background gradient */}
+      <div className="absolute inset-0 bg-gradient-to-br from-dark via-dark/95 to-dark" />
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -167,7 +142,7 @@ export default function Sponsors() {
           className="bg-gradient-to-r from-secondary to-chaos rounded-3xl p-12 text-center"
         >
           <h3 className="text-3xl font-bold mb-4 text-dark comic-sans">
-            Join the Madness as a Sponsor!
+            Become a Sponsor
           </h3>
           <p className="text-dark/80 text-xl mb-6">
             $3,000 flat rate to be associated with glorious failure

@@ -25,7 +25,6 @@ export default async function Image() {
           justifyContent: 'center',
         }}
       >
-        <div style={{ fontSize: '100px', marginBottom: '20px' }}>🤪🎪🤖</div>
         <div style={{ fontSize: '72px', fontWeight: 'bold', color: 'white', marginBottom: '20px' }}>
           The Dumb Hackathon
         </div>
@@ -44,7 +43,6 @@ export default async function Image() {
           alignItems: 'center',
           gap: '10px'
         }}>
-          <span>🤝</span>
           <span>In collaboration with AI Valley</span>
         </div>
       </div>

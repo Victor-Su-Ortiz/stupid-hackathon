@@ -21,7 +21,7 @@ const cards = [
   },
   {
     icon: <Coffee className="w-8 h-8" />,
-    title: "Fueled by Madness",
+    title: "Fueled by Creativity",
     description: "24 hours of pure, unfiltered dumbness. Caffeine, chaos, and Comic Sans. What could go wrong?",
     color: "from-accent to-orange-400",
     rotation: -2,
@@ -57,7 +57,7 @@ export default function AboutSection() {
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
             <span className="comic-sans text-primary">What Is This</span>{" "}
-            <span className="text-dark">Madness?</span>
+            <span className="text-dark">Event?</span>
           </h2>
           <p className="text-xl text-dark/70 max-w-2xl mx-auto">
             A hackathon where the worse your idea, the better. We&apos;re here to prove that 
@@ -144,7 +144,7 @@ export default function AboutSection() {
                 <p className="text-dark/70">Practical Applications</p>
               </div>
               <div>
-                <p className="text-4xl font-bold text-accent mb-2">∞</p>
+                <p className="text-4xl font-bold text-accent mb-2">1000+</p>
                 <p className="text-dark/70">Laughs Generated</p>
               </div>
             </div>

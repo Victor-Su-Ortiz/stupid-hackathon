@@ -133,7 +133,7 @@ export default function EventDetails() {
             
             {/* Fake Treasure Map */}
             <div className="bg-accent/20 rounded-lg p-4 relative overflow-hidden">
-              <p className="text-sm text-dark/60 mb-2">🗺️ Treasure Map to Dumbness:</p>
+              <p className="text-sm text-dark/60 mb-2">Location Details:</p>
               <ol className="text-sm space-y-1 text-dark/70">
                 <li>1. Exit reality</li>
                 <li>2. Turn left at common sense</li>

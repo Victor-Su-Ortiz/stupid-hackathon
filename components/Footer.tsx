@@ -4,19 +4,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { Mail, ExternalLink, Heart } from "lucide-react";
-import { AIVALLEY_URL, CONTACT_EMAIL, DUMB_EMOJIS } from "@/lib/constants";
-import { randomFromArray } from "@/lib/utils";
-import { useState, useEffect } from "react";
+import { AIVALLEY_URL, CONTACT_EMAIL } from "@/lib/constants";
 
 export default function Footer() {
-  const [rotatingEmoji, setRotatingEmoji] = useState("🤪");
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setRotatingEmoji(randomFromArray(DUMB_EMOJIS));
-    }, 2000);
-    return () => clearInterval(interval);
-  }, []);
+  // Removed rotating emoji for cleaner design
 
   const footerLinks = [
     { href: AIVALLEY_URL, label: "AI Valley", external: true },
@@ -50,8 +41,7 @@ export default function Footer() {
         <div className="grid md:grid-cols-3 gap-8 mb-8">
           {/* Brand Section */}
           <div>
-            <h3 className="text-2xl font-bold mb-4 comic-sans flex items-center gap-2">
-              <span className="text-3xl spin-slow inline-block">{rotatingEmoji}</span>
+            <h3 className="text-2xl font-bold mb-4 comic-sans">
               Dumb Hackathon
             </h3>
             <p className="text-light/80 mb-4">
@@ -127,7 +117,7 @@ export default function Footer() {
         <div className="border-t border-white/10 pt-8">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4">
             <p className="text-light/60 text-sm">
-              © 2025 The Dumb Hackathon. All wrongs reserved. {rotatingEmoji}
+              © 2025 The Dumb Hackathon. All wrongs reserved.
             </p>
             <p className="text-light/60 text-sm flex items-center gap-1">
               Made with <Heart size={16} className="text-primary" /> and questionable judgment

@@ -1,8 +1,8 @@
-# 🤪 The Dumb Hackathon Website
+# The Dumb Hackathon Website
 
 A gloriously absurd website for The Dumb Hackathon, in collaboration with AI Valley. Built with Next.js 15, this site celebrates the joy of building utterly pointless things.
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 
@@ -42,7 +42,7 @@ npm run dev
 
 6. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-## 🎪 Features
+## Features
 
 ### Core Features
 - **Glitchy Hero Section**: Animated title with floating emojis and typewriter effect
@@ -53,7 +53,7 @@ npm run dev
 - **Sponsors Section**: Special placement for AI Valley as presenting partner
 - **Prize Display**: Animated Labubu prize with particle effects
 
-### 🎮 Easter Eggs & Special Features
+### Easter Eggs & Special Features
 - **Konami Code**: Press ↑↑↓↓←→←→BA for a confetti surprise!
 - **Duck Trail**: Mouse cursor leaves a trail of rubber ducks (activates after 3 seconds)
 - **Random Page Tilts**: Occasionally the page will tilt slightly while scrolling
@@ -61,7 +61,7 @@ npm run dev
 - **Wiggling Buttons**: CTAs wiggle on hover
 - **Moving Registration Button**: Try to click it... if you can!
 
-### 🎨 Design Elements
+### Design Elements
 - **Color Palette**:
   - Primary: #FF6B6B (Silly Red)
   - Secondary: #4ECDC4 (Quirky Teal)
@@ -72,7 +72,7 @@ npm run dev
 - **3D Elements**: Rotating prizes and floating particles
 - **Responsive Design**: Works on all devices (chaos is universal)
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 dumb-hackathon-website/
@@ -100,7 +100,7 @@ dumb-hackathon-website/
 
 ```
 
-## 🚀 Deployment
+## Deployment
 
 ### Deploy to Vercel
 
@@ -119,7 +119,7 @@ npm start      # Run production build locally
 
 **Note**: See `DEPLOYMENT_GUIDE.md` for detailed troubleshooting if you encounter any issues.
 
-## 🤝 Sponsors
+## Sponsors
 
 ### Presenting Partner
 **[AI Valley](https://aivalley.io)** - Where AI meets Absurdity
@@ -133,27 +133,27 @@ npm start      # Run production build locally
   - Association with gloriously dumb projects
   - Networking with creative chaos agents
 
-## 📧 Contact
+## Contact
 
 For all inquiries, sponsorships, and collaboration:
 **Email**: community@aivalley.io
 **Website**: [AI Valley](https://aivalley.io)
 
-## 🎯 Event Details
+## Event Details
 
 - **Date**: September 20th, 2025
 - **Location**: TBD (To be announced)
 - **Time**: 10:00 AM - 9:00 PM (PST/EST/GMT/JST/MARS - we're not sure)
 - **Capacity**: Limited to 100 chaos agents
 
-## ⚠️ Warnings
+## Warnings
 
 - Side effects may include uncontrollable laughter
 - Existential crisis about your career choices
 - The urge to use Comic Sans everywhere
 - Sudden desire to build useless things
 
-## 📝 License
+## License
 
 This project is licensed under the "Do Whatever You Want But Keep It Dumb" License.
 
@@ -161,4 +161,4 @@ This project is licensed under the "Do Whatever You Want But Keep It Dumb" Licen
 
 *Remember: The goal is to create a website that's professional in execution but absolutely ridiculous in spirit. Make it memorable, make it fun, and most importantly, make it dumb!*
 
-Built with 💩 and questionable judgment by the AI Valley community.
+Built with questionable judgment by the AI Valley community.

@@ -3,7 +3,7 @@ export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_EMAIL || "community@aivalle
 export const EVENT_DATE = process.env.NEXT_PUBLIC_EVENT_DATE || "2025-09-20";
 export const LUMA_REGISTRATION_URL = "https://luma.com/b9rho18z";
 
-export const DUMB_EMOJIS = ["🤪", "🎪", "🤖", "💩", "🦆", "🍌", "🎨", "🚀", "🎭", "🤡"];
+export const DUMB_EMOJIS = ["💡", "🚀", "🎨", "🤖", "✨"];
 
 export const DUMB_QUOTES = [
   "Why build something useful when you can build THIS?",
@@ -18,54 +18,48 @@ export const DUMB_QUOTES = [
 
 export const PROJECT_IDEAS = [
   {
-    title: "A toaster that tweets 🍞",
+    title: "A toaster that tweets",
     description: "Every time you make toast, it posts the darkness level to X",
-    uselessness: 95,
-    emoji: "🍞"
+    uselessness: 95
   },
   {
-    title: "Dating app for Crocs owners 👟",
+    title: "Dating app for Crocs owners",
     description: "Find your sole-mate based on Crocs collection",
-    uselessness: 87,
-    emoji: "👟"
+    uselessness: 87
   },
   {
-    title: "Slack bot sending dad jokes in Comic Sans 📝",
+    title: "Slack bot sending dad jokes in Comic Sans",
     description: "Because your team meetings weren't painful enough",
-    uselessness: 92,
-    emoji: "😄"
+    uselessness: 92
   },
   {
-    title: "AI that only speaks in haikus 🎌",
+    title: "AI that only speaks in haikus",
     description: "Making every conversation unnecessarily poetic",
-    uselessness: 88,
-    emoji: "🎌"
+    uselessness: 88
   },
   {
-    title: "Blockchain for tracking lost socks 🧦",
+    title: "Blockchain for tracking lost socks",
     description: "Finally, a decentralized solution to the sock mystery",
-    uselessness: 99,
-    emoji: "🧦"
+    uselessness: 99
   },
   {
-    title: "Zoom background that slowly zooms in 🔍",
+    title: "Zoom background that slowly zooms in",
     description: "Make everyone increasingly uncomfortable during meetings",
-    uselessness: 91,
-    emoji: "🔍"
+    uselessness: 91
   },
 ];
 
 export const SCHEDULE = [
-  { time: "10:00 AM", activity: "Registration & Breakfast", emoji: "☕", description: "Fuel up for dumbness" },
-  { time: "11:00 AM", activity: "Opening Ceremony", emoji: "🎉", description: "Where we explain why this is happening" },
-  { time: "11:30 AM", activity: "Team Formation", emoji: "🤝", description: "Find your partners in crime" },
-  { time: "12:00 PM", activity: "Hacking Begins!", emoji: "💻", description: "Let the chaos commence" },
-  { time: "2:00 PM", activity: "Lunch & Bad Idea Brainstorm", emoji: "🍕", description: "Pizza and poor decisions" },
-  { time: "4:00 PM", activity: "Halfway Check-in", emoji: "🤔", description: "Question your life choices" },
-  { time: "6:00 PM", activity: "Dinner & Demo Prep", emoji: "🍜", description: "Panic and pasta" },
-  { time: "7:30 PM", activity: "Project Demos", emoji: "🎭", description: "Show off your disasters" },
-  { time: "8:30 PM", activity: "Judging & Awards", emoji: "🏆", description: "Crown the king of dumbness" },
-  { time: "9:00 PM", activity: "After Party", emoji: "🎊", description: "Celebrate questionable achievements" },
+  { time: "10:00 AM", activity: "Registration & Breakfast", description: "Fuel up for the day" },
+  { time: "11:00 AM", activity: "Opening Ceremony", description: "Kickoff and introductions" },
+  { time: "11:30 AM", activity: "Team Formation", description: "Find your team members" },
+  { time: "12:00 PM", activity: "Hacking Begins", description: "Start building" },
+  { time: "2:00 PM", activity: "Lunch & Brainstorm", description: "Food and idea sharing" },
+  { time: "4:00 PM", activity: "Progress Check-in", description: "Share your progress" },
+  { time: "6:00 PM", activity: "Dinner & Demo Prep", description: "Final preparations" },
+  { time: "7:30 PM", activity: "Project Demos", description: "Present your creations" },
+  { time: "8:30 PM", activity: "Judging & Awards", description: "Winners announced" },
+  { time: "9:00 PM", activity: "After Party", description: "Celebration and networking" },
 ];
 
 export const SPONSOR_BENEFITS = [

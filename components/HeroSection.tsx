@@ -35,7 +35,7 @@ export default function HeroSection() {
     const width = window.innerWidth;
     const height = window.innerHeight;
     
-    const emojis = Array.from({ length: 5 }, (_, i) => ({
+    const emojis = Array.from({ length: 2 }, (_, i) => ({
       emoji: randomFromArray(DUMB_EMOJIS),
       id: i,
       x: Math.random() * (width - 100), // Subtract emoji size to prevent overflow
@@ -158,7 +158,6 @@ export default function HeroSection() {
           transition={{ type: "spring", stiffness: 100 }}
           whileHover={{ scale: 1.05 }}
         >
-          <span className="inline-block">🛠️</span>{" "}
           <span className="comic-sans">The Dumb Hackathon</span>
         </motion.h1>
 
@@ -192,7 +191,7 @@ export default function HeroSection() {
             whileTap={{ scale: 0.95 }}
             onClick={handleButtonClick}
           >
-            Join the Chaos 🎪
+            Register Now
           </motion.a>
           <motion.a
             href="#projects"
@@ -203,7 +202,7 @@ export default function HeroSection() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            See Past Disasters 💥
+            View Past Projects
           </motion.a>
         </motion.div>
 

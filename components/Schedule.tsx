@@ -54,11 +54,11 @@ export default function Schedule() {
           className="text-center mb-12"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="comic-sans text-secondary">Schedule of</span>{" "}
-            <span className="text-dark">Chaos</span>
+            <span className="comic-sans text-secondary">Event</span>{" "}
+            <span className="text-dark">Schedule</span>
           </h2>
           <p className="text-xl text-dark/70">
-            A carefully orchestrated descent into madness
+            The full day agenda
           </p>
         </motion.div>
 
@@ -96,11 +96,7 @@ export default function Schedule() {
                     className="absolute left-5 w-6 h-6 bg-secondary rounded-full border-4 border-white shadow-lg"
                     whileHover={{ scale: 1.5, rotate: 360 }}
                     transition={{ type: "spring" }}
-                  >
-                    <span className="absolute -left-1 -top-1 text-2xl">
-                      {item.emoji}
-                    </span>
-                  </motion.div>
+                  />
 
                   {/* Content Card */}
                   <motion.div
