@@ -20,12 +20,12 @@ export default function Sponsors() {
           className="text-center mb-12"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-accent comic-sans">Companies Brave Enough</span>
+            <span className="text-accent">Our Partners</span>
             <br />
-            <span className="text-white">to Support Dumbness</span>
+            <span className="text-white">Supporting Creative Innovation</span>
           </h2>
-          <p className="text-xl text-white/80">
-            These legends embrace chaos and questionable decision-making
+          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+            Leading companies investing in the next generation of developers and breakthrough ideas
           </p>
         </motion.div>
 
@@ -72,15 +72,15 @@ export default function Sponsors() {
                         AI Valley
                       </h4>
                       <p className="text-dark/70 flex items-center justify-center gap-2">
-                        Where AI meets Absurdity
+                        Building the Future of AI Innovation
                         <ExternalLink className="w-4 h-4" />
                       </p>
                     </div>
                   </motion.div>
                 </Link>
                 <p className="text-white/70 mt-4 max-w-2xl mx-auto">
-                  AI Valley is proud to support this celebration of creative chaos. 
-                  Because sometimes the best innovations come from the worst ideas.
+                  AI Valley champions unconventional thinking and experimental innovation.
+                  Where breakthrough ideas emerge from creative freedom.
                 </p>
               </div>
             </div>
@@ -95,8 +95,8 @@ export default function Sponsors() {
           className="mb-16"
         >
           <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-white mb-2">Our Amazing Sponsor</h3>
-            <p className="text-white/70">Supporting innovation through absurdity</p>
+            <h3 className="text-3xl font-bold text-white mb-2">Gold Sponsor</h3>
+            <p className="text-white/70">Empowering developers to think differently</p>
           </div>
           <div className="max-w-md mx-auto">
             <motion.div
@@ -123,10 +123,10 @@ export default function Sponsors() {
                       height={54}
                       className="h-14 w-auto group-hover:scale-110 transition-transform"
                     />
-                    <p className="text-dark/70 flex items-center justify-center gap-2">
-                      Empowering developers to build the unthinkable
-                      <ExternalLink className="w-4 h-4" />
-                    </p>
+                      <p className="text-dark/70 flex items-center justify-center gap-2">
+                        Innovation Partner
+                        <ExternalLink className="w-4 h-4" />
+                      </p>
                   </div>
                 </motion.div>
               </Link>
@@ -139,13 +139,33 @@ export default function Sponsors() {
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           viewport={{ once: true }}
-          className="bg-gradient-to-r from-secondary to-chaos rounded-3xl p-12 text-center"
+          className="bg-gradient-to-r from-white/95 to-white rounded-3xl p-12 text-center shadow-xl"
         >
-          <h3 className="text-3xl font-bold mb-4 text-dark comic-sans">
-            Become a Sponsor
+          <h3 className="text-3xl font-bold mb-4 text-dark">
+            Partner With Us
           </h3>
-          <p className="text-dark/80 text-xl mb-6">
-            $3,000 flat rate to be associated with glorious failure
+          
+          {/* Value Proposition Stats */}
+          <div className="grid grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto">
+            <div className="text-center">
+              <p className="text-3xl font-bold text-primary">100+</p>
+              <p className="text-dark/70 text-sm">Developers</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-secondary">24</p>
+              <p className="text-dark/70 text-sm">Hours of Innovation</p>
+            </div>
+            <div className="text-center">
+              <p className="text-3xl font-bold text-accent">∞</p>
+              <p className="text-dark/70 text-sm">Creative Possibilities</p>
+            </div>
+          </div>
+          
+          <p className="text-dark/80 text-xl mb-2">
+            <span className="font-bold text-2xl">Investment: $3,000</span>
+          </p>
+          <p className="text-dark/70 mb-6 max-w-2xl mx-auto">
+            Join industry leaders in supporting creative innovation and connecting with top talent
           </p>
 
           {/* Benefits */}
@@ -166,12 +186,12 @@ export default function Sponsors() {
           </div>
 
           <motion.a
-            href={`mailto:${CONTACT_EMAIL}?subject=Sponsorship Inquiry - Dumb Hackathon`}
+            href={`mailto:${CONTACT_EMAIL}?subject=Partnership Inquiry - Creative Hackathon`}
             className="inline-flex items-center gap-2 bg-dark text-white px-8 py-4 rounded-full font-bold text-lg shadow-2xl"
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Become a Sponsor
+            Explore Partnership Opportunities
             <ExternalLink className="w-5 h-5" />
           </motion.a>
           <p className="text-dark/60 mt-4">

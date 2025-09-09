@@ -5,7 +5,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { DUMB_EMOJIS, AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
+import { CREATIVE_EMOJIS, AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
 import { randomFromArray } from "@/lib/utils";
 
 export default function HeroSection() {
@@ -36,7 +36,7 @@ export default function HeroSection() {
     const height = window.innerHeight;
     
     const emojis = Array.from({ length: 2 }, (_, i) => ({
-      emoji: randomFromArray(DUMB_EMOJIS),
+      emoji: randomFromArray(CREATIVE_EMOJIS),
       id: i,
       x: Math.random() * (width - 100), // Subtract emoji size to prevent overflow
       y: Math.random() * (height - 100),

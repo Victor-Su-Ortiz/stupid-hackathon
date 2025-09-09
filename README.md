@@ -125,13 +125,15 @@ npm start      # Run production build locally
 **[AI Valley](https://aivalley.io)** - Where AI meets Absurdity
 
 ### Sponsorship Opportunities
-- **Flat Rate**: $3,000
+- **Investment**: $3,000
 - **Contact**: community@aivalley.io
 - **Benefits**: 
-  - Logo displayed prominently (and ridiculously)
-  - Shoutouts during the event (in Comic Sans)
-  - Association with gloriously dumb projects
-  - Networking with creative chaos agents
+  - Brand visibility to 100+ innovative developers and creators
+  - Logo placement on website, event materials, and social media
+  - Speaking opportunity during opening/closing ceremonies
+  - Direct talent recruitment and networking opportunities
+  - Demonstrate support for creative innovation and tech community
+  - Connect with the next generation of unconventional problem-solvers
 
 ## Contact
 

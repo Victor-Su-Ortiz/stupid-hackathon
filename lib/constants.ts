@@ -3,49 +3,49 @@ export const CONTACT_EMAIL = process.env.NEXT_PUBLIC_EMAIL || "community@aivalle
 export const EVENT_DATE = process.env.NEXT_PUBLIC_EVENT_DATE || "2025-09-20";
 export const LUMA_REGISTRATION_URL = "https://luma.com/b9rho18z";
 
-export const DUMB_EMOJIS = ["💡", "🚀", "🎨", "🤖", "✨"];
+export const CREATIVE_EMOJIS = ["💡", "🚀", "🎨", "🤖", "✨", "🌟", "⚡", "🔮"];
 
-export const DUMB_QUOTES = [
-  "Why build something useful when you can build THIS?",
-  "Making the internet a weirder place, one hack at a time",
-  "Proudly wasting computational resources since 2024",
-  "If it's not broken, you're not trying hard enough",
-  "Professional dumbness, amateur genius",
-  "Where bad ideas come to life",
-  "Debugging? More like de-bugging (adding more bugs)",
-  "We put the 'fun' in 'dysfunctional'",
+export const CREATIVE_QUOTES = [
+  "Innovation starts where convention ends",
+  "Building tomorrow's possibilities today",
+  "Where creativity meets technology",
+  "Think outside the box, then reinvent it",
+  "Transforming wild ideas into reality",
+  "Pushing the boundaries of what's possible",
+  "Creating solutions you didn't know you needed",
+  "Innovation through experimentation",
 ];
 
 export const PROJECT_IDEAS = [
   {
-    title: "A toaster that tweets",
-    description: "Every time you make toast, it posts the darkness level to X",
-    uselessness: 95
+    title: "Smart IoT Toaster",
+    description: "Connected kitchen appliance with social media integration",
+    creativity: 95
   },
   {
-    title: "Dating app for Crocs owners",
-    description: "Find your sole-mate based on Crocs collection",
-    uselessness: 87
+    title: "Niche Social Platform",
+    description: "Community-driven app for enthusiast collectors",
+    creativity: 87
   },
   {
-    title: "Slack bot sending dad jokes in Comic Sans",
-    description: "Because your team meetings weren't painful enough",
-    uselessness: 92
+    title: "Team Morale Bot",
+    description: "Automated tool to boost workplace engagement",
+    creativity: 92
   },
   {
-    title: "AI that only speaks in haikus",
-    description: "Making every conversation unnecessarily poetic",
-    uselessness: 88
+    title: "Poetic AI Assistant",
+    description: "Natural language processing with creative constraints",
+    creativity: 88
   },
   {
-    title: "Blockchain for tracking lost socks",
-    description: "Finally, a decentralized solution to the sock mystery",
-    uselessness: 99
+    title: "Distributed Inventory Tracker",
+    description: "Blockchain solution for everyday problems",
+    creativity: 99
   },
   {
-    title: "Zoom background that slowly zooms in",
-    description: "Make everyone increasingly uncomfortable during meetings",
-    uselessness: 91
+    title: "Dynamic Video Effects",
+    description: "Real-time video manipulation for remote meetings",
+    creativity: 91
   },
 ];
 
@@ -63,10 +63,10 @@ export const SCHEDULE = [
 ];
 
 export const SPONSOR_BENEFITS = [
-  "Your logo displayed prominently (and ridiculously)",
-  "Shoutouts during the event (in Comic Sans)",
-  "Association with gloriously dumb projects",
-  "Networking with creative chaos agents",
-  "The joy of supporting pointless innovation",
-  "Bragging rights for supporting the dumbest hackathon",
+  "Brand visibility to 100+ innovative developers and creators",
+  "Logo placement on website, event materials, and social media",
+  "Speaking opportunity during opening/closing ceremonies",
+  "Direct talent recruitment and networking opportunities",
+  "Demonstrate support for creative innovation and tech community",
+  "Connect with the next generation of unconventional problem-solvers",
 ];
