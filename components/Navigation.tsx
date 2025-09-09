@@ -27,6 +27,7 @@ export default function Navigation() {
 
   const menuItems = [
     { href: "#about", label: "About", emoji: "📖" },
+    { href: "#venue", label: "Venue", emoji: "📍" },
     { href: "#schedule", label: "Schedule", emoji: "⏳" },
     { href: "#projects", label: "Projects", emoji: "💡" },
     { href: "#sponsors", label: "Sponsors", emoji: "💸" },

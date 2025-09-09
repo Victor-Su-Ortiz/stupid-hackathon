@@ -5,6 +5,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import AboutSection from "@/components/AboutSection";
 import EventDetails from "@/components/EventDetails";
+import VenueHost from "@/components/VenueHost";
 import Schedule from "@/components/Schedule";
 import ProjectsGallery from "@/components/ProjectsGallery";
 import Sponsors from "@/components/Sponsors";
@@ -39,6 +40,7 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <EventDetails />
+        <VenueHost />
         <Schedule />
         <ProjectsGallery />
         <PrizeSection />
