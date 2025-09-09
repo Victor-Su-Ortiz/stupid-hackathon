@@ -42,11 +42,11 @@ export default function ProjectsGallery() {
           className="text-center mb-12"
         >
           <h2 className="text-5xl md:text-6xl font-bold mb-4">
-            <span className="text-primary">Terrible</span>{" "}
-            <span className="comic-sans text-dark">Project Ideas</span>
+            <span className="text-primary">Creative</span>{" "}
+            <span className="text-dark">Project Showcase</span>
           </h2>
           <p className="text-xl text-dark/70">
-            Get inspired by these magnificently pointless creations
+            Get inspired by these innovative and unconventional ideas
           </p>
         </motion.div>
 
@@ -90,19 +90,19 @@ export default function ProjectsGallery() {
                     {currentProject.description}
                   </p>
 
-                  {/* Uselessness Meter */}
+                  {/* Creativity Meter */}
                   <div className="mb-6">
                     <div className="flex justify-between items-center mb-2">
-                      <span className="text-dark font-semibold">Uselessness Meter</span>
+                      <span className="text-dark font-semibold">Creativity Score</span>
                       <span className="text-2xl font-bold text-primary">
-                        {currentProject.uselessness}%
+                        {currentProject.creativity}%
                       </span>
                     </div>
                     <div className="w-full bg-gray-200 rounded-full h-4 overflow-hidden">
                       <motion.div
                         className="h-full bg-gradient-to-r from-accent to-primary rounded-full"
                         initial={{ width: 0 }}
-                        animate={{ width: `${currentProject.uselessness}%` }}
+                        animate={{ width: `${currentProject.creativity}%` }}
                         transition={{ duration: 1, delay: 0.5 }}
                       />
                     </div>
@@ -117,7 +117,7 @@ export default function ProjectsGallery() {
                       onClick={() => handleVote(currentIndex)}
                     >
                       <Trophy className="w-5 h-5" />
-                      Vote for Most Dumb
+                      Vote for Most Creative
                       {votes[currentIndex] && (
                         <span className="bg-white/20 px-2 py-1 rounded-full text-sm">
                           {votes[currentIndex]}
@@ -159,16 +159,16 @@ export default function ProjectsGallery() {
           className="mt-16"
         >
           <h3 className="text-2xl font-bold text-center mb-8 text-dark">
-            More Gloriously Bad Ideas
+            More Innovation Opportunities
           </h3>
           <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {["LinkedIn for pets 🐕", "Uber but for walking 🚶", "TikTok for spreadsheets 📊"].map((idea, index) => (
+            {["Professional Networking Platform 🐕", "Micro-Mobility Solution 🚶", "Data Visualization Tool 📊"].map((idea, index) => (
               <motion.div
                 key={index}
                 className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg"
                 whileHover={{ scale: 1.05, rotate: index % 2 === 0 ? 2 : -2 }}
               >
-                <p className="text-lg font-semibold text-dark comic-sans">{idea}</p>
+                <p className="text-lg font-semibold text-dark">{idea}</p>
               </motion.div>
             ))}
           </div>
