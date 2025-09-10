@@ -149,30 +149,6 @@ export default function ProjectsGallery() {
             ))}
           </div>
         </div>
-
-        {/* Additional Ideas Grid */}
-        <motion.div
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          viewport={{ once: true }}
-          transition={{ delay: 0.3 }}
-          className="mt-16"
-        >
-          <h3 className="text-2xl font-bold text-center mb-8 text-dark">
-            More Innovation Opportunities
-          </h3>
-          <div className="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto">
-            {["Professional Networking Platform 🐕", "Micro-Mobility Solution 🚶", "Data Visualization Tool 📊"].map((idea, index) => (
-              <motion.div
-                key={index}
-                className="bg-white/80 backdrop-blur-sm rounded-xl p-6 text-center shadow-lg"
-                whileHover={{ scale: 1.05, rotate: index % 2 === 0 ? 2 : -2 }}
-              >
-                <p className="text-lg font-semibold text-dark">{idea}</p>
-              </motion.div>
-            ))}
-          </div>
-        </motion.div>
       </div>
     </section>
   );

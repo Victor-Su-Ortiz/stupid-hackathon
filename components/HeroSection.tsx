@@ -202,7 +202,7 @@ export default function HeroSection() {
             }}
             whileTap={{ scale: 0.95 }}
           >
-            View Past Projects
+            View Example Projects
           </motion.a>
         </motion.div>
 
@@ -226,17 +226,6 @@ export default function HeroSection() {
             ))}
           </div>
         )}
-
-        {/* Event Date with Glassmorphism */}
-        <motion.div
-          className="mt-12 glassmorphism rounded-2xl p-6 text-white"
-          initial={{ opacity: 0, y: 20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 1.5 }}
-        >
-          <p className="text-xl mb-2 font-bold">September 20th, 2025</p>
-          <p className="text-lg opacity-90">@ TBD (Location to be announced)</p>
-        </motion.div>
       </div>
 
       {/* Enhanced Scroll Indicator */}

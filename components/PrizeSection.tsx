@@ -1,8 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Trophy, Gift, Star } from "lucide-react";
+import { Trophy, Gift, Star, ExternalLink, Instagram } from "lucide-react";
 import { useState, useEffect } from "react";
+import Link from "next/link";
+import Image from "next/image";
+import { LUMA_REGISTRATION_URL } from "@/lib/constants";
 
 export default function PrizeSection() {
   const [particles, setParticles] = useState<Array<{ id: number; x: number; y: number }>>([]);
@@ -48,10 +51,12 @@ export default function PrizeSection() {
           className="text-center mb-12"
         >
           <h2 className="text-5xl md:text-6xl font-bold text-white mb-4">
-            <span className="comic-sans">The Grand Prize</span>
+            <Trophy className="inline-block w-12 h-12 mb-2 text-accent" />
+            <br />
+            <span className="text-accent">The Grand Prize</span>
           </h2>
-          <p className="text-xl text-white/90">
-            Because who needs another boring Amazon gift card?
+          <p className="text-xl text-white/90 max-w-3xl mx-auto">
+            A one-of-one collector&apos;s piece, equal parts trophy and art
           </p>
         </motion.div>
 
@@ -91,22 +96,41 @@ export default function PrizeSection() {
 
                 {/* Labubu Image/Placeholder */}
                 <div className="bg-gradient-to-br from-primary/20 to-secondary/20 rounded-2xl p-8 mb-6">
-                  <motion.div
-                    className="text-6xl text-center"
-                    animate={{ rotate: 360 }}
-                    transition={{
-                      duration: 20,
-                      repeat: Infinity,
-                      ease: "linear",
-                    }}
-                  >
-                    🎁
-                  </motion.div>
-                  <p className="text-center mt-4 font-bold text-dark">
-                    Limited Edition Labubu
+                  <div className="relative w-full h-48 mb-4">
+                    <Image
+                      src="/labubu-prize.png"
+                      alt="Custom Labubu with Diamonds and Pearls"
+                      fill
+                      className="object-contain"
+                      onError={(e) => {
+                        // Fallback to emoji if image doesn't exist yet
+                        e.currentTarget.style.display = 'none';
+                        const fallback = document.getElementById('labubu-fallback');
+                        if (fallback) fallback.style.display = 'block';
+                      }}
+                    />
+                    <motion.div
+                      id="labubu-fallback"
+                      className="text-6xl text-center"
+                      style={{ display: 'none' }}
+                      animate={{ rotate: 360 }}
+                      transition={{
+                        duration: 20,
+                        repeat: Infinity,
+                        ease: "linear",
+                      }}
+                    >
+                      💎
+                    </motion.div>
+                  </div>
+                  <p className="text-center mt-4 font-bold text-dark text-lg">
+                    Custom Labubu with Diamonds & Pearls
                   </p>
                   <p className="text-center text-dark/70 text-sm">
-                    (Actual prize may vary in dumbness)
+                    Hand-adorned with diamonds and pearls by Kyle Chan
+                  </p>
+                  <p className="text-center text-primary text-xs mt-1">
+                    Crafted exclusively in Los Angeles for this event
                   </p>
                 </div>
 
@@ -157,18 +181,50 @@ export default function PrizeSection() {
               viewport={{ once: true }}
               className="text-white"
             >
-              <h3 className="text-3xl font-bold mb-6 comic-sans">Why This Prize?</h3>
+              <h3 className="text-3xl font-bold mb-6">Designed by Kyle Chan</h3>
+              
+              <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-6">
+                <p className="text-white/90 mb-4 leading-relaxed">
+                  Custom-made by celebrity jeweler <span className="font-bold text-accent">Kyle Chan</span>, 
+                  whose work has been worn by <span className="font-semibold">Beyonc&eacute;</span>, 
+                  featured in <span className="font-semibold">La La Land</span> on Emma Stone, 
+                  and celebrated across Bravo&apos;s <span className="font-semibold">Vanderpump Rules</span> and 
+                  <span className="font-semibold">RHOBH</span>.
+                </p>
+                <p className="text-white/80 mb-4">
+                  Recently profiled by the <span className="font-semibold">New York Times</span> as 
+                  &ldquo;the unofficial jeweler to the stars on Bravo&rdquo;
+                </p>
+                <div className="flex flex-wrap gap-3">
+                  <Link
+                    href="https://www.nytimes.com/2024/03/14/style/kyle-chan-jewelry-bravo.html"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full hover:bg-white/30 transition-colors"
+                  >
+                    <ExternalLink className="w-4 h-4" />
+                    Read NYT Article
+                  </Link>
+                  <Link
+                    href="https://instagram.com/kylechandesign"
+                    target="_blank"
+                    className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full hover:bg-white/30 transition-colors"
+                  >
+                    <Instagram className="w-4 h-4" />
+                    @kylechandesign
+                  </Link>
+                </div>
+              </div>
               
               <div className="space-y-4">
                 <motion.div
                   className="flex items-start gap-3"
                   whileHover={{ x: 10 }}
                 >
-                  <Gift className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <Gift className="w-6 h-6 mt-1 flex-shrink-0 text-accent" />
                   <div>
-                    <p className="font-semibold text-lg mb-1">Utterly Useless</p>
+                    <p className="font-semibold text-lg mb-1">One-of-One Collector&apos;s Piece</p>
                     <p className="text-white/80">
-                      Perfect for your collection of things you&apos;ll never use
+                      Exclusively crafted for this event - truly unique
                     </p>
                   </div>
                 </motion.div>
@@ -177,11 +233,11 @@ export default function PrizeSection() {
                   className="flex items-start gap-3"
                   whileHover={{ x: 10 }}
                 >
-                  <Trophy className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <Trophy className="w-6 h-6 mt-1 flex-shrink-0 text-accent" />
                   <div>
-                    <p className="font-semibold text-lg mb-1">Conversation Starter</p>
+                    <p className="font-semibold text-lg mb-1">Celebrity Craftsmanship</p>
                     <p className="text-white/80">
-                      &quot;Why do you have that?&quot; - Everyone who sees it
+                      Custom diamonds and pearls added by a jeweler to the stars
                     </p>
                   </div>
                 </motion.div>
@@ -190,11 +246,11 @@ export default function PrizeSection() {
                   className="flex items-start gap-3"
                   whileHover={{ x: 10 }}
                 >
-                  <Star className="w-6 h-6 mt-1 flex-shrink-0" />
+                  <Star className="w-6 h-6 mt-1 flex-shrink-0 text-accent" />
                   <div>
-                    <p className="font-semibold text-lg mb-1">Instagram Worthy</p>
+                    <p className="font-semibold text-lg mb-1">True Flex for Creative Genius</p>
                     <p className="text-white/80">
-                      At least 12 likes guaranteed (mostly from bots)
+                      A trophy worthy of your wonderfully unconventional ideas
                     </p>
                   </div>
                 </motion.div>
@@ -215,7 +271,7 @@ export default function PrizeSection() {
                   <span className="text-accent font-bold">✗</span>
                 </p>
                 <p className="text-lg font-bold text-accent mt-2">
-                  Gloriously Dumb Labubu ✓
+                  Custom Labubu with Diamonds by Kyle Chan ✓
                 </p>
               </div>
             </motion.div>
@@ -229,15 +285,17 @@ export default function PrizeSection() {
             transition={{ delay: 0.5 }}
             className="text-center mt-12"
           >
-            <motion.button
-              className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg shadow-2xl"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Win This Masterpiece of Dumbness 🎯
-            </motion.button>
+            <Link href={LUMA_REGISTRATION_URL} target="_blank">
+              <motion.button
+                className="bg-white text-primary px-8 py-4 rounded-full font-bold text-lg shadow-2xl"
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                Compete for This Masterpiece 💎
+              </motion.button>
+            </Link>
             <p className="text-white/70 mt-4 italic">
-              * Prize subject to availability and our definition of &quot;dumb&quot;
+              * Custom-made in Los Angeles exclusively for this event
             </p>
           </motion.div>
         </div>

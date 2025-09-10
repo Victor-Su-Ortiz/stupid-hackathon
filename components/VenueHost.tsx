@@ -182,7 +182,7 @@ export default function VenueHost() {
           className="text-center"
         >
           <p className="text-dark/60 mb-4">
-            Join us at Pebblebed&apos;s San Francisco office for a day of innovation and creativity
+            Join us at Pebblebed&apos;s office in San Francisco for a day of innovation and creativity
           </p>
           <motion.div
             className="inline-flex items-center gap-2 text-secondary font-semibold"
@@ -190,7 +190,7 @@ export default function VenueHost() {
             transition={{ duration: 2, repeat: Infinity }}
           >
             <MapPin className="w-5 h-5" />
-            <span>Location details will be shared with registered participants</span>
+            <span>Pebblebed Office, San Francisco</span>
           </motion.div>
         </motion.div>
       </div>

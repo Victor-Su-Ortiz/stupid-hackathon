@@ -49,6 +49,7 @@ export default function Navigation() {
         <div className="flex items-center justify-between">
           <div className="flex items-center space-x-6">
             <Link href="/" className="text-2xl font-bold flex items-center space-x-2">
+              <span className="text-3xl animate-bounce">🤪</span>
               <span className="comic-sans text-white drop-shadow-lg">Dumb Hackathon</span>
             </Link>
             <Link 
@@ -56,7 +57,7 @@ export default function Navigation() {
               target="_blank"
               className="hidden md:flex items-center space-x-2 bg-white/20 backdrop-blur-sm px-3 py-1 rounded-full hover:bg-white/30 transition-colors"
             >
-              <span className="text-sm text-white">In collaboration with</span>
+              <span className="text-sm text-white whitespace-nowrap">In collaboration with</span>
               <div className="flex items-center gap-1">
                 <Image 
                   src="/ai-valley.png" 
@@ -93,7 +94,7 @@ export default function Navigation() {
               href={LUMA_REGISTRATION_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-4 py-2 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-all hover:scale-110 transform"
+              className="inline-flex items-center justify-center px-4 py-2 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-all hover:scale-110 transform"
             >
               Register Now 🎪
             </Link>
@@ -147,7 +148,7 @@ export default function Navigation() {
                 href={LUMA_REGISTRATION_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="px-4 py-2 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-colors text-center"
+                className="inline-flex items-center justify-center px-4 py-2 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-colors w-full"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
                 Register Now 🎪

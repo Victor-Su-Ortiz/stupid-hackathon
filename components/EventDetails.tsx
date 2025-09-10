@@ -128,20 +128,20 @@ export default function EventDetails() {
               <MapPin className="w-8 h-8 text-primary mr-3" />
               <h3 className="text-2xl font-bold text-dark">Location</h3>
             </div>
-            <p className="text-xl text-dark mb-2">Location: TBD</p>
-            <p className="text-dark/70 mb-4">To be announced soon - stay tuned for the chaos location!</p>
+            <p className="text-xl text-dark mb-2">Pebblebed Office</p>
+            <p className="text-dark/70 mb-4">San Francisco, CA</p>
             
-            {/* Fake Treasure Map */}
+            {/* Venue Details */}
             <div className="bg-accent/20 rounded-lg p-4 relative overflow-hidden">
-              <p className="text-sm text-dark/60 mb-2">Location Details:</p>
-              <ol className="text-sm space-y-1 text-dark/70">
-                <li>1. Exit reality</li>
-                <li>2. Turn left at common sense</li>
-                <li>3. Walk past logic</li>
-                <li>4. You&apos;ve arrived! 🎉</li>
-              </ol>
+              <p className="text-sm text-dark/60 mb-2">Venue Features:</p>
+              <ul className="text-sm space-y-1 text-dark/70">
+                <li>🏢 Hosted at Pebblebed VC</li>
+                <li>📍 Prime San Francisco location</li>
+                <li>🚇 Transit accessible</li>
+                <li>☕ Refreshments provided</li>
+              </ul>
               <div className="absolute top-2 right-2 text-4xl opacity-20 rotate-12">
-                🏴‍☠️
+                🗺️
               </div>
             </div>
           </motion.div>

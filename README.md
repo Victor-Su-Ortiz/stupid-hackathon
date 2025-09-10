@@ -119,10 +119,16 @@ npm start      # Run production build locally
 
 **Note**: See `DEPLOYMENT_GUIDE.md` for detailed troubleshooting if you encounter any issues.
 
+## Venue Host
+
+**[Pebblebed](https://pebblebed.com)** - Technical Early-Stage VC
+
+Proudly hosted at Pebblebed's San Francisco office. Pebblebed is founded by industry leaders including Pam Vagata (co-founder of OpenAI), Keith Adams (founded Facebook AI Research), Luke Byrne (former partner at Tapestry), and Tammie Siew (former Sequoia Southeast Asia investor).
+
 ## Sponsors
 
 ### Presenting Partner
-**[AI Valley](https://aivalley.io)** - Where AI meets Absurdity
+**[AI Valley](https://aivalley.io)** - Building the Future of AI Innovation
 
 ### Sponsorship Opportunities
 - **Investment**: $3,000
@@ -144,9 +150,9 @@ For all inquiries, sponsorships, and collaboration:
 ## Event Details
 
 - **Date**: September 20th, 2025
-- **Location**: TBD (To be announced)
-- **Time**: 10:00 AM - 9:00 PM (PST/EST/GMT/JST/MARS - we're not sure)
-- **Capacity**: Limited to 100 chaos agents
+- **Location**: Pebblebed Office, San Francisco, CA
+- **Time**: 10:00 AM - 9:00 PM PST
+- **Capacity**: Limited to 100 participants
 
 ## Warnings
 

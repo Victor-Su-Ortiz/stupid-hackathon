@@ -31,9 +31,6 @@ export default async function Image() {
         <div style={{ fontSize: '36px', color: 'white', marginBottom: '40px' }}>
           Build the dumbest thing you can imagine
         </div>
-        <div style={{ fontSize: '28px', color: 'white', opacity: 0.9 }}>
-          September 20th, 2025 @ TBD
-        </div>
         <div style={{ 
           position: 'absolute', 
           bottom: '40px', 
