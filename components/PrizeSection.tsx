@@ -197,7 +197,7 @@ export default function PrizeSection() {
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link
-                    href="https://www.nytimes.com/2024/03/14/style/kyle-chan-jewelry-bravo.html"
+                    href="https://www.nytimes.com/2025/06/10/style/kyle-chan-jewelry-bravo-reality-tv.html"
                     target="_blank"
                     className="inline-flex items-center gap-2 bg-white/20 px-4 py-2 rounded-full hover:bg-white/30 transition-colors"
                   >
