@@ -186,14 +186,14 @@ export default function PrizeSection() {
               <div className="bg-white/10 backdrop-blur-sm rounded-xl p-6 mb-6">
                 <p className="text-white/90 mb-4 leading-relaxed">
                   Custom-made by celebrity jeweler <span className="font-bold text-accent">Kyle Chan</span>, 
-                  whose work has been worn by <span className="font-semibold">Beyonc&eacute;</span>, 
-                  featured in <span className="font-semibold">La La Land</span> on Emma Stone, 
-                  and celebrated across Bravo&apos;s <span className="font-semibold">Vanderpump Rules</span> and 
-                  <span className="font-semibold">RHOBH</span>.
+                  whose work has been worn by <span className="font-semibold">Taylor Swift</span>, 
+                  <span className="font-semibold">Beyonc&eacute;</span>, and featured in 
+                  <span className="font-semibold">La La Land</span> on Emma Stone. His creations have adorned 
+                  A-list celebrities on red carpets and world tours.
                 </p>
                 <p className="text-white/80 mb-4">
                   Recently profiled by the <span className="font-semibold">New York Times</span> as 
-                  &ldquo;the unofficial jeweler to the stars on Bravo&rdquo;
+                  &ldquo;the jeweler to Hollywood&apos;s elite&rdquo; with clients from the music and film industries
                 </p>
                 <div className="flex flex-wrap gap-3">
                   <Link
