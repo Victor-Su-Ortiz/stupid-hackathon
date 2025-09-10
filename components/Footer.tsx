@@ -2,7 +2,6 @@
 
 import Link from "next/link";
 import Image from "next/image";
-import { motion } from "framer-motion";
 import { ExternalLink, Heart } from "lucide-react";
 import { AIVALLEY_URL } from "@/lib/constants";
 
@@ -16,26 +15,11 @@ export default function Footer() {
     { href: "#", label: "Code of Conduct", external: false },
   ];
 
-  const socialIcons = ["🐦", "📸", "💼", "🎮"];
+  // Removed social icons for cleaner design
 
   return (
     <footer className="relative bg-dark text-white py-12 overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        {Array.from({ length: 50 }, (_, i) => (
-          <span
-            key={i}
-            className="absolute text-4xl"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-              transform: `rotate(${Math.random() * 360}deg)`,
-            }}
-          >
-            🦆
-          </span>
-        ))}
-      </div>
+      {/* Removed background pattern for cleaner design */}
 
       <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-3 gap-8 mb-8">
@@ -98,18 +82,7 @@ export default function Footer() {
               <ExternalLink size={18} />
               AI Valley
             </a>
-            <div className="flex gap-4">
-              {socialIcons.map((icon, index) => (
-                <motion.button
-                  key={index}
-                  className="text-2xl hover:scale-125 transition-transform"
-                  whileHover={{ rotate: 360 }}
-                  transition={{ duration: 0.5 }}
-                >
-                  {icon}
-                </motion.button>
-              ))}
-            </div>
+            {/* Removed social icons for cleaner design */}
           </div>
         </div>
 
@@ -124,7 +97,7 @@ export default function Footer() {
             </p>
           </div>
           <p className="text-center text-xs text-light/40 mt-4">
-            PS: Try the Konami code for a surprise! ⬆️⬆️⬇️⬇️⬅️➡️⬅️➡️BA
+            PS: Try the Konami code for a surprise!
           </p>
         </div>
       </div>

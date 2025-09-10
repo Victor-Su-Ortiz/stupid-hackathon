@@ -91,7 +91,7 @@ export default function PrizeSection() {
                     repeat: Infinity,
                   }}
                 >
-                  🏆
+                  {/* Removed trophy emoji */}
                 </motion.div>
 
                 {/* Labubu Image/Placeholder */}
@@ -120,7 +120,7 @@ export default function PrizeSection() {
                         ease: "linear",
                       }}
                     >
-                      💎
+                      {/* Removed diamond emoji */}
                     </motion.div>
                   </div>
                   <p className="text-center mt-4 font-bold text-dark text-lg">
@@ -169,7 +169,7 @@ export default function PrizeSection() {
                     delay: angle / 360,
                   }}
                 >
-                  ✨
+                  {/* Removed sparkle emoji */}
                 </motion.div>
               ))}
             </motion.div>
@@ -260,18 +260,18 @@ export default function PrizeSection() {
               <div className="mt-8 p-4 bg-white/10 rounded-xl backdrop-blur-sm">
                 <p className="text-lg">
                   <span className="line-through text-white/50">Amazon Gift Card</span>{" "}
-                  <span className="text-accent font-bold">✗</span>
+                  <span className="text-accent font-bold">NO</span>
                 </p>
                 <p className="text-lg">
                   <span className="line-through text-white/50">Cash Prize</span>{" "}
-                  <span className="text-accent font-bold">✗</span>
+                  <span className="text-accent font-bold">NO</span>
                 </p>
                 <p className="text-lg">
                   <span className="line-through text-white/50">Useful Tech Gadget</span>{" "}
-                  <span className="text-accent font-bold">✗</span>
+                  <span className="text-accent font-bold">NO</span>
                 </p>
                 <p className="text-lg font-bold text-accent mt-2">
-                  Custom Labubu with Diamonds by Kyle Chan ✓
+                  Custom Labubu with Diamonds by Kyle Chan - YES
                 </p>
               </div>
             </motion.div>
@@ -291,7 +291,7 @@ export default function PrizeSection() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                Compete for This Masterpiece 💎
+                Compete for This Masterpiece
               </motion.button>
             </Link>
             <p className="text-white/70 mt-4 italic">

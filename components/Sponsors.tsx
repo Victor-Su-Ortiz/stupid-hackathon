@@ -156,7 +156,7 @@ export default function Sponsors() {
               <p className="text-dark/70 text-sm">Hours of Innovation</p>
             </div>
             <div className="text-center">
-              <p className="text-3xl font-bold text-accent">∞</p>
+              <p className="text-3xl font-bold text-accent">Unlimited</p>
               <p className="text-dark/70 text-sm">Creative Possibilities</p>
             </div>
           </div>
@@ -179,7 +179,7 @@ export default function Sponsors() {
                 transition={{ delay: index * 0.1 }}
                 className="flex items-center gap-3 text-left"
               >
-                <span className="text-2xl">✅</span>
+                <span className="text-2xl">•</span>
                 <span className="text-dark/90">{benefit}</span>
               </motion.div>
             ))}

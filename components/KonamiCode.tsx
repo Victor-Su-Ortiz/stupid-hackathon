@@ -38,7 +38,7 @@ export default function KonamiCode() {
 
     // Also show an alert or modal
     setTimeout(() => {
-      alert("🎉 KONAMI CODE ACTIVATED! You found the secret! You're now officially a chaos agent! 🤪");
+      alert("KONAMI CODE ACTIVATED! You found the secret! You're now officially a chaos agent!");
     }, 500);
   };
 

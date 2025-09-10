@@ -5,13 +5,12 @@ import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import { ChevronDown } from "lucide-react";
-import { CREATIVE_EMOJIS, AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
-import { randomFromArray } from "@/lib/utils";
+import { AIVALLEY_URL, LUMA_REGISTRATION_URL } from "@/lib/constants";
 
 export default function HeroSection() {
   const [typedText, setTypedText] = useState("");
-  const [floatingEmojis, setFloatingEmojis] = useState<Array<{ emoji: string; id: number; x: number; y: number; speed: 'slow' | 'fast' }>>([]);
-  const [showConfetti, setShowConfetti] = useState(false);
+  // Removed floating emojis for cleaner design
+  // Removed confetti for cleaner design
   const fullText = "Build the dumbest thing you can imagine. Seriously.";
 
   useEffect(() => {
@@ -28,95 +27,17 @@ export default function HeroSection() {
     return () => clearInterval(interval);
   }, []);
 
-  useEffect(() => {
-    // Only generate emojis on client side
-    if (typeof window === 'undefined') return;
-    
-    const width = window.innerWidth;
-    const height = window.innerHeight;
-    
-    const emojis = Array.from({ length: 2 }, (_, i) => ({
-      emoji: randomFromArray(CREATIVE_EMOJIS),
-      id: i,
-      x: Math.random() * (width - 100), // Subtract emoji size to prevent overflow
-      y: Math.random() * (height - 100),
-      speed: Math.random() > 0.5 ? 'slow' : 'fast' as 'slow' | 'fast',
-    }));
-    setFloatingEmojis(emojis);
-  }, []);
+  // Removed emoji generation for cleaner design
 
-  const handleButtonClick = () => {
-    setShowConfetti(true);
-    setTimeout(() => setShowConfetti(false), 600);
-  };
+  // Removed button click handler for confetti
 
   return (
     <section className="relative min-h-screen flex flex-col items-center justify-center overflow-hidden bg-gradient-to-br from-primary via-secondary to-accent">
-      {/* Floating Emojis Background with Parallax */}
-      <div className="absolute inset-0 pointer-events-none">
-        {floatingEmojis.map((item) => (
-          <motion.div
-            key={item.id}
-            className={`absolute text-6xl opacity-30 ${item.speed === 'slow' ? 'parallax-slow' : 'parallax-fast'}`}
-            style={{
-              left: `${item.x}px`,
-              top: `${item.y}px`,
-            }}
-            initial={{
-              x: 0,
-              y: 0,
-              rotate: 0,
-            }}
-            animate={{
-              x: (Math.random() - 0.5) * 100,
-              y: (Math.random() - 0.5) * 100,
-              rotate: 180,
-            }}
-            transition={{
-              duration: 30 + Math.random() * 10,
-              repeat: Infinity,
-              repeatType: "reverse",
-              ease: "linear",
-            }}
-            onClick={() => {
-              // Create explosion effect when clicking emojis
-              const explosion = document.createElement('div');
-              explosion.innerHTML = '💥✨🎊';
-              explosion.style.position = 'fixed';
-              explosion.style.left = `${item.x}px`;
-              explosion.style.top = `${item.y}px`;
-              explosion.style.fontSize = '2rem';
-              explosion.style.pointerEvents = 'none';
-              explosion.style.zIndex = '9999';
-              explosion.style.animation = 'bounce 0.5s ease-out';
-              document.body.appendChild(explosion);
-              setTimeout(() => explosion.remove(), 500);
-            }}
-          >
-            {item.emoji}
-          </motion.div>
-        ))}
-      </div>
+      {/* Removed floating emojis for cleaner design */}
 
-      {/* Floating Labubu Mascot with AI Art glow */}
-      <motion.div
-        className="absolute top-20 right-10 text-8xl mascot-float pointer-events-none"
-        initial={{ opacity: 0, scale: 0 }}
-        animate={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 2, duration: 1 }}
-      >
-        🦄
-      </motion.div>
+      {/* Removed floating mascot for cleaner design */}
 
-      {/* Peeking Meme Stickers */}
-      <motion.div
-        className="absolute bottom-20 left-10 text-4xl peek"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ delay: 3 }}
-      >
-        🤡
-      </motion.div>
+      {/* Removed peeking stickers for cleaner design */}
 
       {/* Main Content */}
       <div className="relative z-10 text-center px-4 max-w-5xl mx-auto">
@@ -132,7 +53,6 @@ export default function HeroSection() {
             target="_blank"
             className="inline-flex items-center space-x-3 bg-white/90 backdrop-blur-sm px-6 py-3 rounded-full hover:bg-white transition-colors shadow-lg group"
           >
-            <span className="text-lg">🤝</span>
             <span className="text-dark font-semibold">In collaboration with</span>
             <div className="flex items-center gap-2">
               <Image 
@@ -189,7 +109,6 @@ export default function HeroSection() {
               background: "linear-gradient(45deg, #FF6B6B, #4ECDC4)"
             }}
             whileTap={{ scale: 0.95 }}
-            onClick={handleButtonClick}
           >
             Register Now
           </motion.a>
@@ -206,26 +125,7 @@ export default function HeroSection() {
           </motion.a>
         </motion.div>
 
-        {/* Confetti Effect */}
-        {showConfetti && (
-          <div className="absolute inset-0 pointer-events-none">
-            {Array.from({ length: 20 }, (_, i) => (
-              <motion.div
-                key={i}
-                className="absolute text-2xl confetti-burst"
-                style={{
-                  left: `${Math.random() * 100}%`,
-                  top: `${Math.random() * 100}%`,
-                }}
-                initial={{ opacity: 0 }}
-                animate={{ opacity: 1 }}
-                exit={{ opacity: 0 }}
-              >
-                {['🎉', '✨', '🎊', '🌟', '💫'][Math.floor(Math.random() * 5)]}
-              </motion.div>
-            ))}
-          </div>
-        )}
+        {/* Removed confetti effect for cleaner design */}
       </div>
 
       {/* Enhanced Scroll Indicator */}

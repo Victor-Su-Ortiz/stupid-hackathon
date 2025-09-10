@@ -135,14 +135,12 @@ export default function EventDetails() {
             <div className="bg-accent/20 rounded-lg p-4 relative overflow-hidden">
               <p className="text-sm text-dark/60 mb-2">Venue Features:</p>
               <ul className="text-sm space-y-1 text-dark/70">
-                <li>🏢 Hosted at Pebblebed VC</li>
-                <li>📍 Prime San Francisco location</li>
-                <li>🚇 Transit accessible</li>
-                <li>☕ Refreshments provided</li>
+                <li>• Hosted at Pebblebed VC</li>
+                <li>• Prime San Francisco location</li>
+                <li>• Transit accessible</li>
+                <li>• Refreshments provided</li>
               </ul>
-              <div className="absolute top-2 right-2 text-4xl opacity-20 rotate-12">
-                🗺️
-              </div>
+              {/* Removed map emoji */}
             </div>
           </motion.div>
 
@@ -177,7 +175,7 @@ export default function EventDetails() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              Register Now (If you can click me) 🎯
+              Register Now (If you can click me)
             </motion.a>
           </motion.div>
         </div>
@@ -191,7 +189,7 @@ export default function EventDetails() {
           className="text-center mt-12"
         >
           <p className="text-white/80 italic">
-            ⚠️ Warning: Side effects may include uncontrollable laughter, 
+            Warning: Side effects may include uncontrollable laughter, 
             existential crisis about your career choices, and the urge to use Comic Sans everywhere.
           </p>
         </motion.div>

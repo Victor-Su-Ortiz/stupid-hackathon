@@ -26,12 +26,12 @@ export default function Navigation() {
   }, []);
 
   const menuItems = [
-    { href: "#about", label: "About", emoji: "📖" },
-    { href: "#venue", label: "Venue", emoji: "📍" },
-    { href: "#schedule", label: "Schedule", emoji: "⏳" },
-    { href: "#projects", label: "Projects", emoji: "💡" },
-    { href: "#sponsors", label: "Sponsors", emoji: "💸" },
-    { href: AIVALLEY_URL, label: "Contact", emoji: "📬" },
+    { href: "#about", label: "About" },
+    { href: "#venue", label: "Venue" },
+    { href: "#schedule", label: "Schedule" },
+    { href: "#projects", label: "Projects" },
+    { href: "#sponsors", label: "Sponsors" },
+    { href: AIVALLEY_URL, label: "Contact" },
   ];
 
   return (
@@ -46,18 +46,18 @@ export default function Navigation() {
       }}
     >
       <div className="container mx-auto px-4">
-        <div className="flex items-center justify-between h-16">
-          <div className="flex items-center gap-8">
-            <Link href="/" className="flex items-center gap-2">
-              <span className="text-3xl animate-bounce">🤪</span>
-              <span className="text-xl font-bold text-white drop-shadow-lg">Dumb Hackathon</span>
+        <div className="flex items-center justify-between">
+          <div className="flex items-center gap-4 lg:gap-8">
+            <Link href="/" className="flex items-center">
+              <span className="text-xl font-bold text-white drop-shadow-lg hidden sm:inline">Dumb Hackathon</span>
+              <span className="text-xl font-bold text-white drop-shadow-lg sm:hidden">DH</span>
             </Link>
             <Link 
               href={AIVALLEY_URL} 
               target="_blank"
-              className="hidden lg:flex items-center gap-2 bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full hover:bg-white/20 transition-colors"
+              className="hidden xl:flex items-center gap-2 bg-white/10 backdrop-blur-sm px-3 py-2 rounded-full hover:bg-white/20 transition-colors"
             >
-              <span className="text-sm text-white/90">In collaboration with</span>
+              <span className="text-sm text-white/90">with</span>
               <div className="flex items-center gap-1">
                 <Image 
                   src="/ai-valley.png" 
@@ -76,26 +76,24 @@ export default function Navigation() {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center gap-6">
+          <div className="hidden md:flex items-center gap-5">
             {menuItems.map((item) => (
               <Link
                 key={item.href}
                 href={item.href}
                 target={item.href.startsWith('http') ? '_blank' : undefined}
-                className="flex items-center gap-1.5 text-white hover:text-accent transition-colors"
+                className="text-white hover:text-accent transition-colors"
               >
-                <span className="text-lg">{item.emoji}</span>
-                <span className="text-sm font-medium">{item.label}</span>
+                <span className="text-sm font-medium whitespace-nowrap">{item.label}</span>
               </Link>
             ))}
             <Link
               href={LUMA_REGISTRATION_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-colors hover:scale-105 transform"
+              className="inline-flex items-center justify-center whitespace-nowrap px-5 py-2 bg-accent text-dark font-bold text-base rounded-full hover:bg-secondary transition-colors hover:scale-105 transform"
             >
-              <span>Register Now</span>
-              <span>🎪</span>
+              Register
             </Link>
           </div>
 
@@ -124,7 +122,7 @@ export default function Navigation() {
                     alt="AI Valley" 
                     width={60} 
                     height={20}
-                    className="h-4 w-auto"
+                    className="h-5 w-auto"
                     onError={(e) => {
                       e.currentTarget.style.display = 'none';
                     }}
@@ -137,22 +135,20 @@ export default function Navigation() {
                   key={item.href}
                   href={item.href}
                   target={item.href.startsWith('http') ? '_blank' : undefined}
-                  className="flex items-center gap-2 text-white hover:text-accent transition-colors"
+                  className="text-white hover:text-accent transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  <span className="text-lg">{item.emoji}</span>
-                  <span className="text-base">{item.label}</span>
+                  <span className="text-sm">{item.label}</span>
                 </Link>
               ))}
               <Link
                 href={LUMA_REGISTRATION_URL}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center gap-1.5 px-5 py-2.5 bg-accent text-dark font-bold rounded-full hover:bg-secondary transition-colors w-full"
+                className="inline-flex items-center justify-center whitespace-nowrap px-5 py-2 bg-accent text-dark font-bold text-base rounded-full hover:bg-secondary transition-colors w-full"
                 onClick={() => setIsMobileMenuOpen(false)}
               >
-                <span>Register Now</span>
-                <span>🎪</span>
+                Register Now
               </Link>
             </div>
           </div>

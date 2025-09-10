@@ -117,7 +117,7 @@ export default function AboutSection() {
                   animate={{ scale: 1, rotate: 360 }}
                   exit={{ scale: 0 }}
                 >
-                  {["🎪", "🤡", "🎨", "🚀"][index]}
+                  {/* Removed decorative emoji */}
                 </motion.div>
               )}
             </motion.div>

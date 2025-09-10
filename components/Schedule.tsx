@@ -7,44 +7,19 @@ import { SCHEDULE } from "@/lib/constants";
 
 export default function Schedule() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
-  const [reactions, setReactions] = useState<{ [key: number]: string }>({});
+  // Removed reactions for cleaner design
 
-  const reactionEmojis = ["😂", "🤯", "🔥", "💀", "🎉"];
+  // Removed reaction emojis for cleaner design
 
   const toggleExpand = (index: number) => {
     setExpandedIndex(expandedIndex === index ? null : index);
   };
 
-  const addReaction = (index: number, emoji: string) => {
-    setReactions({ ...reactions, [index]: emoji });
-  };
+  // Removed reaction function for cleaner design
 
   return (
     <section id="schedule" className="py-20 bg-white relative overflow-hidden">
-      {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-5">
-        {Array.from({ length: 8 }, (_, i) => (
-          <motion.div
-            key={i}
-            className="absolute text-6xl"
-            style={{
-              left: `${Math.random() * 100}%`,
-              top: `${Math.random() * 100}%`,
-            }}
-            animate={{
-              x: [-10, 10, -10],
-              y: [-10, 10, -10],
-            }}
-            transition={{
-              duration: 20,
-              repeat: Infinity,
-              repeatType: "reverse",
-            }}
-          >
-            ⏰
-          </motion.div>
-        ))}
-      </div>
+      {/* Removed background pattern for cleaner design */}
 
       <div className="container mx-auto px-4 relative z-10">
         <motion.div
@@ -113,15 +88,6 @@ export default function Schedule() {
                           <span className="text-primary font-bold text-lg">
                             {item.time}
                           </span>
-                          {reactions[index] && (
-                            <motion.span
-                              initial={{ scale: 0 }}
-                              animate={{ scale: 1 }}
-                              className="text-2xl"
-                            >
-                              {reactions[index]}
-                            </motion.span>
-                          )}
                         </div>
                         <h3 className="text-xl font-bold text-dark mb-1" style={{
                           fontFamily: index % 3 === 0 ? "'Comic Sans MS', cursive" : "inherit"
@@ -153,25 +119,9 @@ export default function Schedule() {
                           className="overflow-hidden"
                         >
                           <div className="pt-4 mt-4 border-t border-dark/10">
-                            <p className="text-dark/60 mb-3">
-                              React to this event:
+                            <p className="text-dark/60">
+                              Click to collapse
                             </p>
-                            <div className="flex gap-2">
-                              {reactionEmojis.map((emoji) => (
-                                <motion.button
-                                  key={emoji}
-                                  className="text-2xl p-2 hover:bg-accent/20 rounded-lg transition-colors"
-                                  whileHover={{ scale: 1.2 }}
-                                  whileTap={{ scale: 0.9 }}
-                                  onClick={(e) => {
-                                    e.stopPropagation();
-                                    addReaction(index, emoji);
-                                  }}
-                                >
-                                  {emoji}
-                                </motion.button>
-                              ))}
-                            </div>
                           </div>
                         </motion.div>
                       )}
@@ -193,7 +143,7 @@ export default function Schedule() {
         >
           <div className="inline-block bg-accent/20 rounded-2xl p-6">
             <p className="text-dark font-semibold">
-              💡 Pro Tip: The schedule is more of a suggestion. 
+              Pro Tip: The schedule is more of a suggestion. 
               Chaos doesn&apos;t follow timelines.
             </p>
           </div>

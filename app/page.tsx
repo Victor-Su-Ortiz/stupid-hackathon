@@ -12,7 +12,7 @@ import Sponsors from "@/components/Sponsors";
 import PrizeSection from "@/components/PrizeSection";
 import Footer from "@/components/Footer";
 import KonamiCode from "@/components/KonamiCode";
-import GhibliBackground from "@/components/GhibliBackground";
+// Removed GhibliBackground import for cleaner design
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +33,7 @@ export default function Home() {
 
   return (
     <>
-      <GhibliBackground />
+      {/* Removed GhibliBackground for cleaner design */}
       <KonamiCode />
       <Navigation />
       <main className="overflow-x-hidden">
