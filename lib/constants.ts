@@ -60,7 +60,7 @@ export const SCHEDULE = [
 ];
 
 export const SPONSOR_BENEFITS = [
-  "Brand visibility to 100+ innovative developers and creators",
+  "Brand visibility to 200+ innovative developers and creators",
   "Logo placement on website, event materials, and social media",
   "Speaking opportunity during opening/closing ceremonies",
   "Direct talent recruitment and networking opportunities",

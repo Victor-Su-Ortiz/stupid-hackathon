@@ -189,7 +189,7 @@ export default function Sponsors() {
           {/* Value Proposition Stats */}
           <div className="grid grid-cols-3 gap-4 mb-8 max-w-2xl mx-auto">
             <div className="text-center">
-              <p className="text-3xl font-bold text-primary">100+</p>
+              <p className="text-3xl font-bold text-primary">200+</p>
               <p className="text-dark/70 text-sm">Developers</p>
             </div>
             <div className="text-center">
