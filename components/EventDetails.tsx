@@ -161,7 +161,7 @@ export default function EventDetails() {
             {/* Capacity */}
             <div className="flex items-center mb-4">
               <Users className="w-6 h-6 text-chaos mr-2" />
-              <p className="text-dark">Limited to 100 chaos agents</p>
+              <p className="text-dark">Limited to 200 chaos agents</p>
             </div>
 
             {/* Registration Button that moves */}
