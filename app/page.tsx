@@ -38,9 +38,9 @@ export default function Home() {
       <Navigation />
       <main className="overflow-x-hidden">
         <HeroSection />
+        <Sponsors />
         <AboutSection />
         <EventDetails />
-        <Sponsors />
         <VenueHost />
         <Schedule />
         <ProjectsGallery />

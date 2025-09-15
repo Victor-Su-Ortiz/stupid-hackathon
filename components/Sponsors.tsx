@@ -36,14 +36,14 @@ export default function Sponsors() {
           viewport={{ once: true }}
           className="mb-16"
         >
-          <div className="text-center mb-8">
-            <h3 className="text-3xl font-bold text-white mb-2">Our Sponsors</h3>
-            <p className="text-white/70">Supporting innovation and creative technology</p>
+          <div className="text-center mb-12">
+            <h3 className="text-4xl md:text-5xl font-bold text-white mb-3">Our Sponsors</h3>
+            <p className="text-lg text-white/80">Supporting innovation and creative technology</p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl mx-auto">
             {/* Google Sponsor */}
             <motion.div
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center"
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-10 text-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring" }}
             >
@@ -53,23 +53,23 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-6 py-4 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="h-12 flex items-center">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="h-20 flex items-center justify-center">
                       <Image 
                         src="/google.png" 
                         alt="Google" 
-                        width={120} 
-                        height={40}
-                        className="h-10 w-auto group-hover:scale-110 transition-transform"
+                        width={160} 
+                        height={60}
+                        className="h-16 w-auto group-hover:scale-110 transition-transform"
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-dark/70 text-sm">
+                      <p className="text-dark/70 text-base font-medium">
                         Innovation Partner
                       </p>
                     </div>
@@ -80,7 +80,7 @@ export default function Sponsors() {
 
             {/* Morph Sponsor */}
             <motion.div
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center"
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-10 text-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring" }}
             >
@@ -90,23 +90,23 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-6 py-4 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="h-12 flex items-center">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="h-20 flex items-center justify-center">
                       <Image 
                         src="/Morph.svg" 
                         alt="Morph" 
-                        width={120} 
-                        height={120}
-                        className="h-10 w-auto group-hover:scale-110 transition-transform"
+                        width={160} 
+                        height={160}
+                        className="h-16 w-auto group-hover:scale-110 transition-transform"
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-dark/70 text-sm">
+                      <p className="text-dark/70 text-base font-medium">
                         Agentic coding middleware
                       </p>
                     </div>
@@ -117,7 +117,7 @@ export default function Sponsors() {
 
             {/* Toolhouse Sponsor */}
             <motion.div
-              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center"
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-10 text-center"
               whileHover={{ scale: 1.05 }}
               transition={{ type: "spring" }}
             >
@@ -127,24 +127,61 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-6 py-4 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-3">
-                    <div className="h-12 flex items-center">
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="h-20 flex items-center justify-center">
                       <Image 
                         src="/toolhouse.png" 
                         alt="Toolhouse" 
-                        width={120} 
-                        height={40}
-                        className="h-10 w-auto group-hover:scale-110 transition-transform"
+                        width={160} 
+                        height={60}
+                        className="h-16 w-auto group-hover:scale-110 transition-transform"
                       />
                     </div>
                     <div className="text-center">
-                      <p className="text-dark/70 text-sm">
+                      <p className="text-dark/70 text-base font-medium">
                         AI Agent Platform
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+            </motion.div>
+
+            {/* Ministry of Programming Sponsor */}
+            <motion.div
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-6 lg:p-10 text-center"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring" }}
+            >
+              <Link
+                href="https://ministryofprogramming.com"
+                target="_blank"
+                className="group block"
+              >
+                <motion.div
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
+                  whileHover={{ 
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  <div className="flex flex-col items-center gap-4">
+                    <div className="h-20 flex items-center justify-center">
+                      <Image 
+                        src="/MoP.png" 
+                        alt="Ministry of Programming" 
+                        width={160} 
+                        height={60}
+                        className="h-16 w-auto group-hover:scale-110 transition-transform"
+                      />
+                    </div>
+                    <div className="text-center">
+                      <p className="text-dark/70 text-base font-medium">
+                        Venture Builder & Product Studio
                       </p>
                     </div>
                   </div>

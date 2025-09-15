@@ -89,9 +89,7 @@ export default function Schedule() {
                             {item.time}
                           </span>
                         </div>
-                        <h3 className="text-xl font-bold text-dark mb-1" style={{
-                          fontFamily: index % 3 === 0 ? "'Comic Sans MS', cursive" : "inherit"
-                        }}>
+                        <h3 className="text-xl font-bold text-dark mb-1">
                           {item.activity}
                         </h3>
                         <p className="text-dark/70">{item.description}</p>

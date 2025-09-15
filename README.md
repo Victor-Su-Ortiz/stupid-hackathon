@@ -57,7 +57,7 @@ npm run dev
 - **Konami Code**: Press ↑↑↓↓←→←→BA for a confetti surprise!
 - **Duck Trail**: Mouse cursor leaves a trail of rubber ducks (activates after 3 seconds)
 - **Random Page Tilts**: Occasionally the page will tilt slightly while scrolling
-- **Comic Sans Appearances**: Random elements use Comic Sans for maximum dumbness
+- **Clean Typography**: Consistent font styling throughout the site
 - **Wiggling Buttons**: CTAs wiggle on hover
 - **Moving Registration Button**: Try to click it... if you can!
 
@@ -134,6 +134,7 @@ Proudly hosted at Pebblebed's San Francisco office. Pebblebed is founded by indu
 - **[Google](https://google.com)** - Innovation Partner
 - **[Morph](https://morphllm.com)** - Agentic coding middleware  
 - **[Toolhouse](https://toolhouse.ai)** - AI Agent Platform - Building, deploying, and managing AI agents powered by LLMs
+- **[Ministry of Programming](https://ministryofprogramming.com)** - Venture Builder & Product Studio - 100+ products built, supporting startups from idea to scale
 
 ### Sponsorship Opportunities
 - **Investment**: $3,000
@@ -163,7 +164,7 @@ For all inquiries, sponsorships, and collaboration:
 
 - Side effects may include uncontrollable laughter
 - Existential crisis about your career choices
-- The urge to use Comic Sans everywhere
+- The urge to build more creative projects
 - Sudden desire to build useless things
 
 ## License

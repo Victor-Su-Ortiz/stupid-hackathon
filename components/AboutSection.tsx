@@ -22,7 +22,7 @@ const cards = [
   {
     icon: <Coffee className="w-8 h-8" />,
     title: "Fueled by Creativity",
-    description: "24 hours of pure, unfiltered dumbness. Caffeine, chaos, and Comic Sans. What could go wrong?",
+    description: "24 hours of pure, unfiltered dumbness. Caffeine and chaos. What could go wrong?",
     color: "from-accent to-orange-400",
     rotation: -2,
   },
@@ -98,9 +98,7 @@ export default function AboutSection() {
                   <div className="mb-4 inline-block p-3 bg-white/20 rounded-lg">
                     {card.icon}
                   </div>
-                  <h3 className="text-xl font-bold mb-2" style={{
-                    fontFamily: Math.random() > 0.5 ? "'Comic Sans MS', cursive" : "inherit"
-                  }}>
+                  <h3 className="text-xl font-bold mb-2">
                     {card.title}
                   </h3>
                   <p className="text-white/90">

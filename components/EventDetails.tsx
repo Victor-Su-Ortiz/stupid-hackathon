@@ -189,8 +189,8 @@ export default function EventDetails() {
           className="text-center mt-12"
         >
           <p className="text-white/80 italic">
-            Warning: Side effects may include uncontrollable laughter, 
-            existential crisis about your career choices, and the urge to use Comic Sans everywhere.
+            Warning: Side effects may include uncontrollable laughter and 
+            existential crisis about your career choices.
           </p>
         </motion.div>
       </div>
