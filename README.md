@@ -130,6 +130,11 @@ Proudly hosted at Pebblebed's San Francisco office. Pebblebed is founded by indu
 ### Presenting Partner
 **[AI Valley](https://aivalley.io)** - Building the Future of AI Innovation
 
+### Our Partners
+- **[Google](https://google.com)** - Innovation Partner
+- **[Morph](https://morphllm.com)** - Agentic coding middleware  
+- **[Toolhouse](https://toolhouse.ai)** - AI Agent Platform - Building, deploying, and managing AI agents powered by LLMs
+
 ### Sponsorship Opportunities
 - **Investment**: $3,000
 - **Contact**: community@aivalley.io

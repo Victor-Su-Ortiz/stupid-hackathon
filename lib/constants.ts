@@ -53,9 +53,9 @@ export const SCHEDULE = [
   { time: "10:00 AM", activity: "Registration & Breakfast", description: "Fuel up for the day" },
   { time: "11:00 AM", activity: "Opening Ceremony", description: "Kickoff and introductions" },
   { time: "1:00 PM", activity: "Lunch & Brainstorm", description: "Food and idea sharing" },
-  { time: "6:00 PM", activity: "Dinner & Demo Prep", description: "Final preparations" },
-  { time: "7:30 PM", activity: "Project Demos", description: "Present your creations" },
-  { time: "8:30 PM", activity: "Judging & Awards", description: "Winners announced" },
+  { time: "5:00 PM", activity: "Dinner & Demo Prep", description: "Final preparations" },
+  { time: "6:30 PM", activity: "Project Demos", description: "Present your creations" },
+  { time: "8:30 PM", activity: "Voting & Awards", description: "Winners announced" },
   { time: "9:00 PM", activity: "After Party", description: "Celebration and networking" },
 ];
 

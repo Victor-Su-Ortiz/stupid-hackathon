@@ -40,11 +40,11 @@ export default function Home() {
         <HeroSection />
         <AboutSection />
         <EventDetails />
+        <Sponsors />
         <VenueHost />
         <Schedule />
         <ProjectsGallery />
         <PrizeSection />
-        <Sponsors />
       </main>
       <Footer />
     </>
