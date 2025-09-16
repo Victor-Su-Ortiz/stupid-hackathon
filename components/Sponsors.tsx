@@ -19,12 +19,12 @@ export default function Sponsors() {
           viewport={{ once: true }}
           className="text-center mb-12"
         >
-          <h2 className="text-5xl md:text-6xl font-bold mb-4">
+          <h2 className="text-6xl md:text-7xl font-bold mb-6">
             <span className="text-accent">Our Sponsors</span>
             <br />
-            <span className="text-white">Supporting Creative Innovation</span>
+            <span className="text-white text-4xl md:text-5xl">Supporting Creative Innovation</span>
           </h2>
-          <p className="text-xl text-white/80 max-w-3xl mx-auto">
+          <p className="text-2xl text-white/80 max-w-3xl mx-auto">
             Leading companies investing in the next generation of developers and breakthrough ideas
           </p>
         </motion.div>
@@ -37,8 +37,8 @@ export default function Sponsors() {
           className="mb-16"
         >
           <div className="text-center mb-12">
-            <h3 className="text-4xl md:text-5xl font-bold text-white mb-3">Our Sponsors</h3>
-            <p className="text-lg text-white/80">Supporting innovation and creative technology</p>
+            <h3 className="text-4xl md:text-5xl font-bold text-white mb-4">Supporting Partners</h3>
+            <p className="text-xl text-white/80">Empowering the next generation of builders</p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 lg:gap-8 max-w-7xl mx-auto">
             {/* Google Sponsor */}
@@ -53,19 +53,20 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full min-h-[200px]"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="h-20 flex items-center justify-center">
+                  <div className="flex flex-col items-center justify-center gap-4 h-full">
+                    <div className="h-20 w-full flex items-center justify-center">
                       <Image 
                         src="/google.png" 
                         alt="Google" 
                         width={160} 
                         height={60}
-                        className="h-16 w-auto group-hover:scale-110 transition-transform"
+                        className="max-h-16 w-auto object-contain group-hover:scale-110 transition-transform"
+                        style={{ maxWidth: '160px' }}
                       />
                     </div>
                     <div className="text-center">
@@ -90,19 +91,20 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full min-h-[200px]"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="h-20 flex items-center justify-center">
+                  <div className="flex flex-col items-center justify-center gap-4 h-full">
+                    <div className="h-20 w-full flex items-center justify-center">
                       <Image 
                         src="/Morph.svg" 
                         alt="Morph" 
                         width={160} 
                         height={160}
-                        className="h-16 w-auto group-hover:scale-110 transition-transform"
+                        className="max-h-16 w-auto object-contain group-hover:scale-110 transition-transform"
+                        style={{ maxWidth: '160px' }}
                       />
                     </div>
                     <div className="text-center">
@@ -127,19 +129,20 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full min-h-[200px]"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="h-20 flex items-center justify-center">
+                  <div className="flex flex-col items-center justify-center gap-4 h-full">
+                    <div className="h-20 w-full flex items-center justify-center">
                       <Image 
                         src="/toolhouse.png" 
                         alt="Toolhouse" 
                         width={160} 
                         height={60}
-                        className="h-16 w-auto group-hover:scale-110 transition-transform"
+                        className="max-h-16 w-auto object-contain group-hover:scale-110 transition-transform"
+                        style={{ maxWidth: '160px' }}
                       />
                     </div>
                     <div className="text-center">
@@ -164,19 +167,20 @@ export default function Sponsors() {
                 className="group block"
               >
                 <motion.div
-                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full"
+                  className="bg-white text-dark px-8 py-8 rounded-xl shadow-xl h-full min-h-[200px]"
                   whileHover={{ 
                     boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
                   }}
                 >
-                  <div className="flex flex-col items-center gap-4">
-                    <div className="h-20 flex items-center justify-center">
+                  <div className="flex flex-col items-center justify-center gap-4 h-full">
+                    <div className="h-20 w-full flex items-center justify-center">
                       <Image 
                         src="/MoP.png" 
                         alt="Ministry of Programming" 
                         width={160} 
                         height={60}
-                        className="h-16 w-auto group-hover:scale-110 transition-transform"
+                        className="max-h-16 w-auto object-contain group-hover:scale-110 transition-transform"
+                        style={{ maxWidth: '160px' }}
                       />
                     </div>
                     <div className="text-center">
