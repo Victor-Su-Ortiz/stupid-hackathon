@@ -132,6 +132,7 @@ Proudly hosted at Pebblebed's San Francisco office. Pebblebed is founded by indu
 
 ### Our Partners
 - **[Google](https://google.com)** - Innovation Partner
+- **[ElevenLabs](https://elevenlabs.io)** - AI Voice Synthesis Platform - Industry-leading text-to-speech and voice cloning technology
 - **[Morph](https://morphllm.com)** - Agentic coding middleware  
 - **[Toolhouse](https://toolhouse.ai)** - AI Agent Platform - Building, deploying, and managing AI agents powered by LLMs
 - **[Ministry of Programming](https://ministryofprogramming.com)** - Venture Builder & Product Studio - 100+ products built, supporting startups from idea to scale
