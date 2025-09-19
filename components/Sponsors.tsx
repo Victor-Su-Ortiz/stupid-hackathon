@@ -231,6 +231,44 @@ export default function Sponsors() {
               </Link>
             </motion.div>
 
+            {/* VAPI Sponsor */}
+            <motion.div
+              className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 lg:p-12 text-center"
+              whileHover={{ scale: 1.05 }}
+              transition={{ type: "spring" }}
+            >
+              <Link
+                href="https://vapi.ai"
+                target="_blank"
+                className="group block"
+              >
+                <motion.div
+                  className="bg-white text-dark px-10 py-10 rounded-xl shadow-xl h-full min-h-[240px]"
+                  whileHover={{ 
+                    boxShadow: "0 20px 40px rgba(0,0,0,0.2)",
+                  }}
+                >
+                  <div className="flex flex-col items-center justify-center gap-5 h-full">
+                    <div className="h-24 w-full flex items-center justify-center">
+                      <Image 
+                        src="/VAPI.png" 
+                        alt="VAPI" 
+                        width={200} 
+                        height={80}
+                        className="max-h-20 w-auto object-contain group-hover:scale-110 transition-transform"
+                        style={{ maxWidth: '200px' }}
+                      />
+                    </div>
+                    <div className="text-center">
+                      <p className="text-dark/70 text-lg font-medium">
+                        Voice AI Platform
+                      </p>
+                    </div>
+                  </div>
+                </motion.div>
+              </Link>
+            </motion.div>
+
           </div>
         </motion.div>
 

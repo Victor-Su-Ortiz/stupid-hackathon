@@ -136,6 +136,7 @@ Proudly hosted at Pebblebed's San Francisco office. Pebblebed is founded by indu
 - **[Morph](https://morphllm.com)** - Agentic coding middleware  
 - **[Toolhouse](https://toolhouse.ai)** - AI Agent Platform - Building, deploying, and managing AI agents powered by LLMs
 - **[Ministry of Programming](https://ministryofprogramming.com)** - Venture Builder & Product Studio - 100+ products built, supporting startups from idea to scale
+- **[VAPI](https://vapi.ai)** - Voice AI Platform - Build and deploy voice AI agents for developers with API-first approach
 
 ### Sponsorship Opportunities
 - **Investment**: $3,000
